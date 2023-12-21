@@ -60,6 +60,7 @@ airflow db init
 * Initialise the metadatabase
 
 
+
 airflow scheduler &
 * Start Airflow’s scheduler in background
 
