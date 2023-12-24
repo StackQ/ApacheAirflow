@@ -1,0 +1,70 @@
+[2023-12-23 18:28:31,600] {dag_processing.py:604} INFO - Processing files using up to 2 processes at a time 
+[2023-12-23 18:28:31,601] {dag_processing.py:605} INFO - Process each file at most once every 30 seconds
+[2023-12-23 18:28:31,601] {dag_processing.py:607} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-12-23 18:28:31,601] {dag_processing.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-12-23 18:28:31,602] {dag_processing.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-12-23 18:28:31,619] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:28:31,619] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:23:31.619880+00:00
+[2023-12-23 18:28:41,637] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:28:41,637] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:23:41.637488+00:00
+[2023-12-23 18:28:51,656] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:28:51,656] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:23:51.656512+00:00
+[2023-12-23 18:29:01,675] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:29:01,675] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:24:01.675939+00:00
+[2023-12-23 18:29:11,695] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:29:11,695] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:24:11.695653+00:00
+[2023-12-23 18:29:21,715] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:29:21,715] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:24:21.715343+00:00
+[2023-12-23 18:29:31,735] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:29:31,735] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:24:31.735330+00:00
+[2023-12-23 18:29:41,755] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:29:41,755] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:24:41.755570+00:00
+[2023-12-23 18:29:51,775] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:29:51,775] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:24:51.775442+00:00
+[2023-12-23 18:30:01,795] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:30:01,795] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:25:01.795724+00:00
+[2023-12-23 18:30:11,815] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:30:11,816] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:25:11.816047+00:00
+[2023-12-23 18:30:21,836] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:30:21,836] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:25:21.836688+00:00
+[2023-12-23 18:30:31,855] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:30:31,855] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:25:31.855803+00:00
+[2023-12-23 18:30:41,875] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:30:41,875] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:25:41.875394+00:00
+[2023-12-23 18:30:51,895] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:30:51,895] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:25:51.895872+00:00
+[2023-12-23 18:31:01,916] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:31:01,916] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:26:01.916293+00:00
+[2023-12-23 18:31:11,936] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:31:11,936] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:26:11.936424+00:00
+[2023-12-23 18:31:21,955] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:31:21,955] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:26:21.955689+00:00
+[2023-12-23 18:31:31,977] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:31:31,977] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:26:31.977221+00:00
+[2023-12-23 18:31:41,997] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:31:41,997] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:26:41.997674+00:00
+[2023-12-23 18:31:52,016] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:31:52,016] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:26:52.016459+00:00
+[2023-12-23 18:32:02,036] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:32:02,036] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:27:02.036496+00:00
+[2023-12-23 18:32:12,054] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:32:12,054] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:27:12.054312+00:00
+[2023-12-23 18:32:22,073] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:32:22,073] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:27:22.073395+00:00
+[2023-12-23 18:32:32,094] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:32:32,094] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:27:32.094279+00:00
+[2023-12-23 18:32:42,114] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:32:42,115] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:27:42.115047+00:00
+[2023-12-23 18:32:52,134] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:32:52,135] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:27:52.135109+00:00
+[2023-12-23 18:33:02,153] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:33:02,154] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:28:02.154063+00:00
+[2023-12-23 18:33:12,173] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:33:12,173] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:28:12.173509+00:00
+[2023-12-23 18:33:22,192] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:33:22,192] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:28:22.192462+00:00
+[2023-12-23 18:33:32,211] {dag_processing.py:755} INFO - Searching for files in /opt/airflow/dags
+[2023-12-23 18:33:32,212] {dag_processing.py:758} INFO - There are 0 files in /opt/airflow/dags
+[2023-12-23 18:33:32,217] {dag_processing.py:1123} INFO - Finding 'running' jobs without a recent heartbeat
+[2023-12-23 18:33:32,217] {dag_processing.py:1127} INFO - Failing jobs without heartbeat after 2023-12-23 18:28:32.217293+00:00
+[2023-12-23 18:33:38,972] {dag_processing.py:585} INFO - Exiting gracefully upon receiving signal 15

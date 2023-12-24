@@ -1,0 +1,35 @@
+[2023-12-23T18:59:37.282+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: context.get_print_context_task manual__2023-12-23T18:59:36.420467+00:00 [queued]>
+[2023-12-23T18:59:37.293+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: context.get_print_context_task manual__2023-12-23T18:59:36.420467+00:00 [queued]>
+[2023-12-23T18:59:37.293+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-23T18:59:37.293+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-23T18:59:37.293+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-23T18:59:37.315+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): get_print_context_task> on 2023-12-23 18:59:36.420467+00:00
+[2023-12-23T18:59:37.321+0000] {standard_task_runner.py:55} INFO - Started process 551 to run task
+[2023-12-23T18:59:37.323+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'context', 'get_print_context_task', 'manual__2023-12-23T18:59:36.420467+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/context.py', '--cfg-path', '/tmp/tmp8ak9xwkc']
+[2023-12-23T18:59:37.324+0000] {standard_task_runner.py:83} INFO - Job 18: Subtask get_print_context_task
+[2023-12-23T18:59:37.377+0000] {task_command.py:376} INFO - Running <TaskInstance: context.get_print_context_task manual__2023-12-23T18:59:36.420467+00:00 [running]> on host 28f9b8b00c96
+[2023-12-23T18:59:37.408+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-23T18:59:37.442+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=context
+AIRFLOW_CTX_TASK_ID=get_print_context_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-23T18:59:36.420467+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-23T18:59:36.420467+00:00
+[2023-12-23T18:59:37.442+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/context.py", line 11, in _my_function
+    for k,v in context:
+ValueError: too many values to unpack (expected 2)
+[2023-12-23T18:59:37.449+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=context, task_id=get_print_context_task, execution_date=20231223T185936, start_date=20231223T185937, end_date=20231223T185937
+[2023-12-23T18:59:37.467+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 18 for task get_print_context_task (too many values to unpack (expected 2); 551)
+[2023-12-23T18:59:37.495+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-12-23T18:59:37.517+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

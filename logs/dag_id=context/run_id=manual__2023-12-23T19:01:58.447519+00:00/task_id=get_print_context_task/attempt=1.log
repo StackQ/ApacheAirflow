@@ -1,0 +1,102 @@
+[2023-12-23T19:01:59.031+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: context.get_print_context_task manual__2023-12-23T19:01:58.447519+00:00 [queued]>
+[2023-12-23T19:01:59.044+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: context.get_print_context_task manual__2023-12-23T19:01:58.447519+00:00 [queued]>
+[2023-12-23T19:01:59.045+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-23T19:01:59.045+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-23T19:01:59.045+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-23T19:01:59.072+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): get_print_context_task> on 2023-12-23 19:01:58.447519+00:00
+[2023-12-23T19:01:59.087+0000] {standard_task_runner.py:55} INFO - Started process 663 to run task
+[2023-12-23T19:01:59.091+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'context', 'get_print_context_task', 'manual__2023-12-23T19:01:58.447519+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/context.py', '--cfg-path', '/tmp/tmp1k41p2bn']
+[2023-12-23T19:01:59.091+0000] {standard_task_runner.py:83} INFO - Job 19: Subtask get_print_context_task
+[2023-12-23T19:01:59.205+0000] {task_command.py:376} INFO - Running <TaskInstance: context.get_print_context_task manual__2023-12-23T19:01:58.447519+00:00 [running]> on host 28f9b8b00c96
+[2023-12-23T19:01:59.274+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-23T19:01:59.343+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=context
+AIRFLOW_CTX_TASK_ID=get_print_context_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-23T19:01:58.447519+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.344+0000] {logging_mixin.py:120} INFO - context key=conf : <***.configuration.AirflowConfigParser object at 0x7febeead6ed0>
+[2023-12-23T19:01:59.344+0000] {logging_mixin.py:120} INFO - context key=dag : <DAG: context>
+[2023-12-23T19:01:59.345+0000] {logging_mixin.py:120} INFO - context key=dag_run : <DagRun context @ 2023-12-23 19:01:58.447519+00:00: manual__2023-12-23T19:01:58.447519+00:00, state:running, queued_at: 2023-12-23 19:01:58.461312+00:00. externally triggered: True>
+[2023-12-23T19:01:59.345+0000] {logging_mixin.py:120} INFO - context key=data_interval_end : 2023-12-23T00:00:00+00:00
+[2023-12-23T19:01:59.345+0000] {logging_mixin.py:120} INFO - context key=data_interval_start : 2023-12-22T00:00:00+00:00
+[2023-12-23T19:01:59.345+0000] {logging_mixin.py:120} INFO - context key=ds : 2023-12-23
+[2023-12-23T19:01:59.345+0000] {logging_mixin.py:120} INFO - context key=ds_nodash : 20231223
+[2023-12-23T19:01:59.346+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.346+0000] {logging_mixin.py:120} INFO - context key=execution_date : 2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.346+0000] {logging_mixin.py:120} INFO - context key=inlets : []
+[2023-12-23T19:01:59.346+0000] {logging_mixin.py:120} INFO - context key=logical_date : 2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.346+0000] {logging_mixin.py:120} INFO - context key=macros : <module '***.macros' from '/home/***/.local/lib/python3.7/site-packages/***/macros/__init__.py'>
+[2023-12-23T19:01:59.346+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.346+0000] {logging_mixin.py:120} INFO - context key=next_ds : 2023-12-23
+[2023-12-23T19:01:59.347+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.347+0000] {logging_mixin.py:120} INFO - context key=next_ds_nodash : 20231223
+[2023-12-23T19:01:59.347+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.347+0000] {logging_mixin.py:120} INFO - context key=next_execution_date : 2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.347+0000] {logging_mixin.py:120} INFO - context key=outlets : []
+[2023-12-23T19:01:59.347+0000] {logging_mixin.py:120} INFO - context key=params : {}
+[2023-12-23T19:01:59.347+0000] {logging_mixin.py:120} INFO - context key=prev_data_interval_start_success : 2023-12-22T00:00:00+00:00
+[2023-12-23T19:01:59.348+0000] {logging_mixin.py:120} INFO - context key=prev_data_interval_end_success : 2023-12-23T00:00:00+00:00
+[2023-12-23T19:01:59.352+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.352+0000] {logging_mixin.py:120} INFO - context key=prev_ds : 2023-12-23
+[2023-12-23T19:01:59.352+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.352+0000] {logging_mixin.py:120} INFO - context key=prev_ds_nodash : 20231223
+[2023-12-23T19:01:59.352+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.352+0000] {logging_mixin.py:120} INFO - context key=prev_execution_date : 2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.353+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=prev_execution_date_success : 2023-12-22T00:00:00+00:00
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=prev_start_date_success : 2023-12-23T18:52:05.990352+00:00
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=run_id : manual__2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=task : <Task(PythonOperator): get_print_context_task>
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=task_instance : <TaskInstance: context.get_print_context_task manual__2023-12-23T19:01:58.447519+00:00 [running]>
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=task_instance_key_str : context__get_print_context_task__20231223
+[2023-12-23T19:01:59.353+0000] {logging_mixin.py:120} INFO - context key=test_mode : False
+[2023-12-23T19:01:59.354+0000] {logging_mixin.py:120} INFO - context key=ti : <TaskInstance: context.get_print_context_task manual__2023-12-23T19:01:58.447519+00:00 [running]>
+[2023-12-23T19:01:59.354+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.354+0000] {logging_mixin.py:120} INFO - context key=tomorrow_ds : 2023-12-24
+[2023-12-23T19:01:59.354+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.354+0000] {logging_mixin.py:120} INFO - context key=tomorrow_ds_nodash : 20231224
+[2023-12-23T19:01:59.369+0000] {logging_mixin.py:120} INFO - context key=triggering_dataset_events : defaultdict(<class 'list'>, {})
+[2023-12-23T19:01:59.370+0000] {logging_mixin.py:120} INFO - context key=ts : 2023-12-23T19:01:58.447519+00:00
+[2023-12-23T19:01:59.370+0000] {logging_mixin.py:120} INFO - context key=ts_nodash : 20231223T190158
+[2023-12-23T19:01:59.370+0000] {logging_mixin.py:120} INFO - context key=ts_nodash_with_tz : 20231223T190158.447519+0000
+[2023-12-23T19:01:59.370+0000] {logging_mixin.py:120} INFO - context key=var : {'json': None, 'value': None}
+[2023-12-23T19:01:59.370+0000] {logging_mixin.py:120} INFO - context key=conn : None
+[2023-12-23T19:01:59.370+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.371+0000] {logging_mixin.py:120} INFO - context key=yesterday_ds : 2023-12-22
+[2023-12-23T19:01:59.371+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:297: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2023-12-23T19:01:59.371+0000] {logging_mixin.py:120} INFO - context key=yesterday_ds_nodash : 20231222
+[2023-12-23T19:01:59.371+0000] {logging_mixin.py:120} INFO - context key=templates_dict : None
+[2023-12-23T19:01:59.371+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-12-23T19:01:59.383+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=context, task_id=get_print_context_task, execution_date=20231223T190158, start_date=20231223T190159, end_date=20231223T190159
+[2023-12-23T19:01:59.436+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-23T19:01:59.457+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
