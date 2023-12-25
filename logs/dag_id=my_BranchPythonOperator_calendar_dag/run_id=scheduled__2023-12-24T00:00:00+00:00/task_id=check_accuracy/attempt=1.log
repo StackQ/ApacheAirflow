@@ -1,0 +1,40 @@
+[2023-12-25T18:40:05.892+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: my_BranchPythonOperator_calendar_dag.check_accuracy scheduled__2023-12-24T00:00:00+00:00 [queued]>
+[2023-12-25T18:40:05.900+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: my_BranchPythonOperator_calendar_dag.check_accuracy scheduled__2023-12-24T00:00:00+00:00 [queued]>
+[2023-12-25T18:40:05.900+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T18:40:05.900+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-25T18:40:05.900+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T18:40:05.917+0000] {taskinstance.py:1383} INFO - Executing <Task(BranchPythonOperator): check_accuracy> on 2023-12-24 00:00:00+00:00
+[2023-12-25T18:40:05.923+0000] {standard_task_runner.py:55} INFO - Started process 1277 to run task
+[2023-12-25T18:40:05.925+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_BranchPythonOperator_calendar_dag', 'check_accuracy', 'scheduled__2023-12-24T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/my_BranchPythonOperator_calendar_dag.py', '--cfg-path', '/tmp/tmpk12vqa17']
+[2023-12-25T18:40:05.926+0000] {standard_task_runner.py:83} INFO - Job 95: Subtask check_accuracy
+[2023-12-25T18:40:05.942+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-25T18:40:05.979+0000] {task_command.py:376} INFO - Running <TaskInstance: my_BranchPythonOperator_calendar_dag.check_accuracy scheduled__2023-12-24T00:00:00+00:00 [running]> on host 4d1993f85b22
+[2023-12-25T18:40:06.011+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-25T18:40:06.049+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_BranchPythonOperator_calendar_dag
+AIRFLOW_CTX_TASK_ID=check_accuracy
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-24T00:00:00+00:00
+[2023-12-25T18:40:06.050+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 211, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py", line 13, in _check_holidays
+    with open('files/days_off.yml', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'files/days_off.yml'
+[2023-12-25T18:40:06.066+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=my_BranchPythonOperator_calendar_dag, task_id=check_accuracy, execution_date=20231224T000000, start_date=20231225T184005, end_date=20231225T184006
+[2023-12-25T18:40:06.088+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 95 for task check_accuracy ([Errno 2] No such file or directory: 'files/days_off.yml'; 1277)
+[2023-12-25T18:40:06.137+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-12-25T18:40:06.173+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

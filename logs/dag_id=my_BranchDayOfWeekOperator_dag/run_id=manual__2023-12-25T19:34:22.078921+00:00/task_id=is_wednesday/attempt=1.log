@@ -1,0 +1,24 @@
+[2023-12-25T19:34:25.077+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: my_BranchDayOfWeekOperator_dag.is_wednesday manual__2023-12-25T19:34:22.078921+00:00 [queued]>
+[2023-12-25T19:34:25.085+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: my_BranchDayOfWeekOperator_dag.is_wednesday manual__2023-12-25T19:34:22.078921+00:00 [queued]>
+[2023-12-25T19:34:25.085+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T19:34:25.085+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-25T19:34:25.085+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T19:34:25.102+0000] {taskinstance.py:1383} INFO - Executing <Task(BranchDayOfWeekOperator): is_wednesday> on 2023-12-25 19:34:22.078921+00:00
+[2023-12-25T19:34:25.108+0000] {standard_task_runner.py:55} INFO - Started process 3890 to run task
+[2023-12-25T19:34:25.110+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_BranchDayOfWeekOperator_dag', 'is_wednesday', 'manual__2023-12-25T19:34:22.078921+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/branch_week_dag.py', '--cfg-path', '/tmp/tmp1bhgbf7e']
+[2023-12-25T19:34:25.110+0000] {standard_task_runner.py:83} INFO - Job 105: Subtask is_wednesday
+[2023-12-25T19:34:25.168+0000] {task_command.py:376} INFO - Running <TaskInstance: my_BranchDayOfWeekOperator_dag.is_wednesday manual__2023-12-25T19:34:22.078921+00:00 [running]> on host 4d1993f85b22
+[2023-12-25T19:34:25.244+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_BranchDayOfWeekOperator_dag
+AIRFLOW_CTX_TASK_ID=is_wednesday
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-25T19:34:22.078921+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-25T19:34:22.078921+00:00
+[2023-12-25T19:34:25.244+0000] {skipmixin.py:155} INFO - Following branch ['wed_MON_task']
+[2023-12-25T19:34:25.245+0000] {skipmixin.py:190} INFO - Skipping tasks ['end']
+[2023-12-25T19:34:25.294+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=my_BranchDayOfWeekOperator_dag, task_id=is_wednesday, execution_date=20231225T193422, start_date=20231225T193425, end_date=20231225T193425
+[2023-12-25T19:34:25.322+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-25T19:34:25.351+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

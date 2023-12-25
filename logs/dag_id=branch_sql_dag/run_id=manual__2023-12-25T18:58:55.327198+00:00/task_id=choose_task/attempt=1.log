@@ -1,0 +1,31 @@
+[2023-12-25T18:58:58.415+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: branch_sql_dag.choose_task manual__2023-12-25T18:58:55.327198+00:00 [queued]>
+[2023-12-25T18:58:58.422+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: branch_sql_dag.choose_task manual__2023-12-25T18:58:55.327198+00:00 [queued]>
+[2023-12-25T18:58:58.422+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T18:58:58.422+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-25T18:58:58.423+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T18:58:58.439+0000] {taskinstance.py:1383} INFO - Executing <Task(BranchSQLOperator): choose_task> on 2023-12-25 18:58:55.327198+00:00
+[2023-12-25T18:58:58.445+0000] {standard_task_runner.py:55} INFO - Started process 2186 to run task
+[2023-12-25T18:58:58.448+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'branch_sql_dag', 'choose_task', 'manual__2023-12-25T18:58:55.327198+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/branch_sql_dag.py', '--cfg-path', '/tmp/tmp1kdaayt0']
+[2023-12-25T18:58:58.448+0000] {standard_task_runner.py:83} INFO - Job 100: Subtask choose_task
+[2023-12-25T18:58:58.498+0000] {task_command.py:376} INFO - Running <TaskInstance: branch_sql_dag.choose_task manual__2023-12-25T18:58:55.327198+00:00 [running]> on host 4d1993f85b22
+[2023-12-25T18:58:58.526+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-25T18:58:58.562+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=branch_sql_dag
+AIRFLOW_CTX_TASK_ID=choose_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-25T18:58:55.327198+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-12-25T18:58:55.327198+00:00
+[2023-12-25T18:58:58.562+0000] {sql.py:877} INFO - Executing: SELECT COUNT(1) FROM partners WHERE partner_status=TRUE (with parameters None) with connection: postgres
+[2023-12-25T18:58:58.569+0000] {base.py:71} INFO - Using connection ID 'postgres' for task execution.
+[2023-12-25T18:58:58.854+0000] {base.py:71} INFO - Using connection ID 'postgres' for task execution.
+[2023-12-25T18:58:58.858+0000] {sql.py:895} INFO - Query returns 3, type '<class 'int'>'
+[2023-12-25T18:58:58.858+0000] {skipmixin.py:155} INFO - Following branch ['process']
+[2023-12-25T18:58:58.858+0000] {skipmixin.py:190} INFO - Skipping tasks ['notif_slack', 'notif_email']
+[2023-12-25T18:58:58.895+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=branch_sql_dag, task_id=choose_task, execution_date=20231225T185855, start_date=20231225T185858, end_date=20231225T185858
+[2023-12-25T18:58:58.939+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-25T18:58:58.970+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
