@@ -1,0 +1,27 @@
+[2023-12-25T16:18:29.457+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: my_python_TaskFlow_API_dag.print_mysetting scheduled__2023-12-24T00:00:00+00:00 [queued]>
+[2023-12-25T16:18:29.470+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: my_python_TaskFlow_API_dag.print_mysetting scheduled__2023-12-24T00:00:00+00:00 [queued]>
+[2023-12-25T16:18:29.470+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T16:18:29.470+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-25T16:18:29.470+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T16:18:29.488+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): print_mysetting> on 2023-12-24 00:00:00+00:00
+[2023-12-25T16:18:29.495+0000] {standard_task_runner.py:55} INFO - Started process 2558 to run task
+[2023-12-25T16:18:29.499+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_python_TaskFlow_API_dag', 'print_mysetting', 'scheduled__2023-12-24T00:00:00+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/my_python_TaskFlow_API_dag.py', '--cfg-path', '/tmp/tmpis5w9wds']
+[2023-12-25T16:18:29.499+0000] {standard_task_runner.py:83} INFO - Job 78: Subtask print_mysetting
+[2023-12-25T16:18:29.516+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-25T16:18:29.564+0000] {task_command.py:376} INFO - Running <TaskInstance: my_python_TaskFlow_API_dag.print_mysetting scheduled__2023-12-24T00:00:00+00:00 [running]> on host 4d1993f85b22
+[2023-12-25T16:18:29.655+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_python_TaskFlow_API_dag
+AIRFLOW_CTX_TASK_ID=print_mysetting
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-24T00:00:00+00:00
+[2023-12-25T16:18:29.656+0000] {logging_mixin.py:120} INFO - /opt/local/*** / data.csv
+[2023-12-25T16:18:29.656+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-12-25T16:18:29.671+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=my_python_TaskFlow_API_dag, task_id=print_mysetting, execution_date=20231224T000000, start_date=20231225T161829, end_date=20231225T161829
+[2023-12-25T16:18:29.714+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-25T16:18:29.746+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
