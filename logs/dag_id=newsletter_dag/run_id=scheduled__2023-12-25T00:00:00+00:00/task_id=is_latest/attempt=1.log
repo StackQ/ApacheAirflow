@@ -1,0 +1,58 @@
+[2023-12-26T09:41:21.229+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: newsletter_dag.is_latest scheduled__2023-12-25T00:00:00+00:00 [queued]>
+[2023-12-26T09:41:21.237+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: newsletter_dag.is_latest scheduled__2023-12-25T00:00:00+00:00 [queued]>
+[2023-12-26T09:41:21.237+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T09:41:21.237+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-26T09:41:21.237+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T09:41:21.255+0000] {taskinstance.py:1383} INFO - Executing <Task(LatestOnlyOperator): is_latest> on 2023-12-25 00:00:00+00:00
+[2023-12-26T09:41:21.261+0000] {standard_task_runner.py:55} INFO - Started process 4808 to run task
+[2023-12-26T09:41:21.264+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'newsletter_dag', 'is_latest', 'scheduled__2023-12-25T00:00:00+00:00', '--job-id', '213', '--raw', '--subdir', 'DAGS_FOLDER/newsletter_dag.py', '--cfg-path', '/tmp/tmpl19qalgx']
+[2023-12-26T09:41:21.264+0000] {standard_task_runner.py:83} INFO - Job 213: Subtask is_latest
+[2023-12-26T09:41:21.282+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-26T09:41:21.333+0000] {task_command.py:376} INFO - Running <TaskInstance: newsletter_dag.is_latest scheduled__2023-12-25T00:00:00+00:00 [running]> on host d2fc15a9183d
+[2023-12-26T09:41:21.437+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=newsletter_dag
+AIRFLOW_CTX_TASK_ID=is_latest
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-25T00:00:00+00:00
+[2023-12-26T09:41:21.439+0000] {latest_only.py:70} INFO - Checking latest only with left_window: 2023-12-26T00:00:00+00:00 right_window: 2023-12-27T00:00:00+00:00 now: 2023-12-26T09:41:21.439269+00:00
+[2023-12-26T09:41:21.439+0000] {latest_only.py:79} INFO - Latest, allowing execution to proceed.
+[2023-12-26T09:41:21.439+0000] {skipmixin.py:155} INFO - Following branch ['sending_newsletter']
+[2023-12-26T09:41:21.439+0000] {skipmixin.py:190} INFO - Skipping tasks []
+[2023-12-26T09:41:21.495+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=newsletter_dag, task_id=is_latest, execution_date=20231225T000000, start_date=20231226T094121, end_date=20231226T094121
+[2023-12-26T09:41:21.557+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-26T09:41:21.592+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-26T09:42:04.008+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: newsletter_dag.is_latest scheduled__2023-12-25T00:00:00+00:00 [queued]>
+[2023-12-26T09:42:04.019+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: newsletter_dag.is_latest scheduled__2023-12-25T00:00:00+00:00 [queued]>
+[2023-12-26T09:42:04.019+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T09:42:04.019+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-26T09:42:04.019+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T09:42:04.066+0000] {taskinstance.py:1383} INFO - Executing <Task(LatestOnlyOperator): is_latest> on 2023-12-25 00:00:00+00:00
+[2023-12-26T09:42:04.073+0000] {standard_task_runner.py:55} INFO - Started process 4851 to run task
+[2023-12-26T09:42:04.079+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'newsletter_dag', 'is_latest', 'scheduled__2023-12-25T00:00:00+00:00', '--job-id', '216', '--raw', '--subdir', 'DAGS_FOLDER/newsletter_dag.py', '--cfg-path', '/tmp/tmp0zetbp78']
+[2023-12-26T09:42:04.081+0000] {standard_task_runner.py:83} INFO - Job 216: Subtask is_latest
+[2023-12-26T09:42:04.114+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-26T09:42:04.170+0000] {task_command.py:376} INFO - Running <TaskInstance: newsletter_dag.is_latest scheduled__2023-12-25T00:00:00+00:00 [running]> on host d2fc15a9183d
+[2023-12-26T09:42:04.248+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=newsletter_dag
+AIRFLOW_CTX_TASK_ID=is_latest
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-25T00:00:00+00:00
+[2023-12-26T09:42:04.249+0000] {latest_only.py:70} INFO - Checking latest only with left_window: 2023-12-26T00:00:00+00:00 right_window: 2023-12-27T00:00:00+00:00 now: 2023-12-26T09:42:04.249856+00:00
+[2023-12-26T09:42:04.250+0000] {latest_only.py:79} INFO - Latest, allowing execution to proceed.
+[2023-12-26T09:42:04.250+0000] {skipmixin.py:155} INFO - Following branch ['sending_newsletter']
+[2023-12-26T09:42:04.250+0000] {skipmixin.py:190} INFO - Skipping tasks []
+[2023-12-26T09:42:04.296+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=newsletter_dag, task_id=is_latest, execution_date=20231225T000000, start_date=20231226T094204, end_date=20231226T094204
+[2023-12-26T09:42:04.337+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-26T09:42:04.369+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

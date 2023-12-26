@@ -1,0 +1,34 @@
+[2023-12-26T09:07:20.690+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: shortcircuit_dag.task_b scheduled__2023-12-26T07:10:00+00:00 [queued]>
+[2023-12-26T09:07:20.697+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: shortcircuit_dag.task_b scheduled__2023-12-26T07:10:00+00:00 [queued]>
+[2023-12-26T09:07:20.698+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T09:07:20.698+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-26T09:07:20.698+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T09:07:20.715+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_b> on 2023-12-26 07:10:00+00:00
+[2023-12-26T09:07:20.720+0000] {standard_task_runner.py:55} INFO - Started process 3073 to run task
+[2023-12-26T09:07:20.723+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'shortcircuit_dag', 'task_b', 'scheduled__2023-12-26T07:10:00+00:00', '--job-id', '173', '--raw', '--subdir', 'DAGS_FOLDER/shortcircuit_dag.py', '--cfg-path', '/tmp/tmp0npqgy_x']
+[2023-12-26T09:07:20.723+0000] {standard_task_runner.py:83} INFO - Job 173: Subtask task_b
+[2023-12-26T09:07:20.739+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-26T09:07:20.778+0000] {task_command.py:376} INFO - Running <TaskInstance: shortcircuit_dag.task_b scheduled__2023-12-26T07:10:00+00:00 [running]> on host d2fc15a9183d
+[2023-12-26T09:07:20.810+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-26T09:07:20.847+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=shortcircuit_dag
+AIRFLOW_CTX_TASK_ID=task_b
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-26T07:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-26T07:10:00+00:00
+[2023-12-26T09:07:20.848+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-12-26T09:07:20.848+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "echo 'task_b'"]
+[2023-12-26T09:07:20.861+0000] {subprocess.py:86} INFO - Output:
+[2023-12-26T09:07:20.863+0000] {subprocess.py:93} INFO - task_b
+[2023-12-26T09:07:20.864+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-26T09:07:20.891+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=shortcircuit_dag, task_id=task_b, execution_date=20231226T071000, start_date=20231226T090720, end_date=20231226T090720
+[2023-12-26T09:07:20.934+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-26T09:07:20.963+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

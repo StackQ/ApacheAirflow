@@ -1,0 +1,975 @@
+[2023-12-26T09:34:31.459+0000] {processor.py:154} INFO - Started process (PID=7772) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:31.459+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:34:31.460+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:31.460+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:31.474+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:31.550+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:31.550+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:34:31.572+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:31.572+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2023-12-26T08:10:00+00:00, run_after=2023-12-26T09:10:00+00:00
+[2023-12-26T09:34:31.595+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.139 seconds
+[2023-12-26T09:34:36.484+0000] {processor.py:154} INFO - Started process (PID=7782) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:36.484+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:34:36.485+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:36.485+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:36.492+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:36.491+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:34:36.492+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:36.515+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.034 seconds
+[2023-12-26T09:34:44.815+0000] {processor.py:154} INFO - Started process (PID=7785) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:44.816+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:34:44.817+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:44.816+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:44.827+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:44.820+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 10, in <module>
+    with DAG('sensor_parent_dag', schedule_interval='10 * * * *', default_args=default_args, catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 455, in __init__
+    date = timezone.parse(date)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timezone.py", line 206, in parse
+    return pendulum.parse(string, tz=timezone or TIMEZONE, strict=False)  # type: ignore
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parser.py", line 29, in parse
+    return _parse(text, **options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parser.py", line 45, in _parse
+    parsed = base_parse(text, **options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parsing/__init__.py", line 74, in parse
+    return _normalize(_parse(text, **_options), **_options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parsing/__init__.py", line 115, in _parse
+    return _parse_iso8601_interval(text)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parsing/__init__.py", line 215, in _parse_iso8601_interval
+    if "/" not in text:
+TypeError: argument of type 'function' is not iterable
+[2023-12-26T09:34:44.828+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:44.855+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.046 seconds
+[2023-12-26T09:34:51.968+0000] {processor.py:154} INFO - Started process (PID=7811) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:51.968+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:34:51.969+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:51.969+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:51.972+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:34:51.971+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 10, in <module>
+    with DAG('newsletter_dag', schedule_interval='10 * * * *', default_args=default_args, catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 455, in __init__
+    date = timezone.parse(date)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timezone.py", line 206, in parse
+    return pendulum.parse(string, tz=timezone or TIMEZONE, strict=False)  # type: ignore
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parser.py", line 29, in parse
+    return _parse(text, **options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parser.py", line 45, in _parse
+    parsed = base_parse(text, **options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parsing/__init__.py", line 74, in parse
+    return _normalize(_parse(text, **_options), **_options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parsing/__init__.py", line 115, in _parse
+    return _parse_iso8601_interval(text)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pendulum/parsing/__init__.py", line 215, in _parse_iso8601_interval
+    if "/" not in text:
+TypeError: argument of type 'function' is not iterable
+[2023-12-26T09:34:51.973+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:34:51.994+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.030 seconds
+[2023-12-26T09:35:00.533+0000] {processor.py:154} INFO - Started process (PID=7822) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:00.533+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:35:00.534+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:35:00.534+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:00.540+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:35:00.540+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:35:00.540+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:00.561+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.032 seconds
+[2023-12-26T09:35:08.614+0000] {processor.py:154} INFO - Started process (PID=7824) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:08.615+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:35:08.615+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:35:08.615+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:08.627+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:35:08.623+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:35:08.630+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:08.665+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.055 seconds
+[2023-12-26T09:35:39.278+0000] {processor.py:154} INFO - Started process (PID=7872) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:39.279+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:35:39.279+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:35:39.279+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:39.285+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:35:39.284+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:35:39.285+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:35:39.307+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.032 seconds
+[2023-12-26T09:36:09.676+0000] {processor.py:154} INFO - Started process (PID=7920) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:36:09.676+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:36:09.677+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:36:09.677+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:36:09.682+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:36:09.681+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:36:09.682+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:36:09.703+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.030 seconds
+[2023-12-26T09:36:39.988+0000] {processor.py:154} INFO - Started process (PID=7959) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:36:39.989+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:36:39.989+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:36:39.989+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:36:39.995+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:36:39.994+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:36:39.995+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:36:40.018+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.033 seconds
+[2023-12-26T09:37:10.453+0000] {processor.py:154} INFO - Started process (PID=8007) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:10.453+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:37:10.454+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:10.454+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:10.459+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:10.459+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 12, in <module>
+    start=BashOperator(task_id="start", bash_command="echo 'start'")
+NameError: name 'BashOperator' is not defined
+[2023-12-26T09:37:10.460+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:10.481+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.032 seconds
+[2023-12-26T09:37:38.514+0000] {processor.py:154} INFO - Started process (PID=8053) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:38.514+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:37:38.515+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:38.515+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:38.517+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:38.516+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3
+    from airflow.operators.latest
+                                ^
+SyntaxError: invalid syntax
+[2023-12-26T09:37:38.517+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:38.540+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.029 seconds
+[2023-12-26T09:37:42.905+0000] {processor.py:154} INFO - Started process (PID=8056) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:42.905+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:37:42.906+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:42.906+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:42.914+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:42.913+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import Lastest
+ImportError: cannot import name 'Lastest' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:37:42.915+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:42.938+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.035 seconds
+[2023-12-26T09:37:51.397+0000] {processor.py:154} INFO - Started process (PID=8074) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:51.398+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:37:51.399+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:51.399+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:51.405+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:51.403+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:37:51.405+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:51.427+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.033 seconds
+[2023-12-26T09:37:58.952+0000] {processor.py:154} INFO - Started process (PID=8083) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:58.953+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:37:58.953+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:58.953+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:58.955+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:37:58.954+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 4
+    from airflow.
+                ^
+SyntaxError: invalid syntax
+[2023-12-26T09:37:58.955+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:37:58.977+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.028 seconds
+[2023-12-26T09:38:07.028+0000] {processor.py:154} INFO - Started process (PID=8094) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:07.028+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:07.029+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:07.029+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:07.034+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:07.033+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:07.034+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:07.055+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:38:16.118+0000] {processor.py:154} INFO - Started process (PID=8106) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:16.119+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:16.120+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:16.119+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:16.125+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:16.124+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:16.125+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:16.149+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.034 seconds
+[2023-12-26T09:38:18.130+0000] {processor.py:154} INFO - Started process (PID=8107) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:18.130+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:18.131+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:18.131+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:18.135+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:18.134+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:18.136+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:18.161+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.034 seconds
+[2023-12-26T09:38:22.846+0000] {processor.py:154} INFO - Started process (PID=8126) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:22.847+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:22.847+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:22.847+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:22.851+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:22.850+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:22.851+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:22.874+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.032 seconds
+[2023-12-26T09:38:29.329+0000] {processor.py:154} INFO - Started process (PID=8134) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:29.330+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:29.331+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:29.330+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:29.335+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:29.335+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:29.336+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:29.357+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:38:32.346+0000] {processor.py:154} INFO - Started process (PID=8135) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:32.347+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:32.347+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:32.347+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:32.356+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:32.355+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:32.356+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:32.391+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.048 seconds
+[2023-12-26T09:38:34.428+0000] {processor.py:154} INFO - Started process (PID=8147) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:34.429+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:34.429+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:34.429+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:34.435+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:34.434+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:34.436+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:34.463+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.038 seconds
+[2023-12-26T09:38:42.511+0000] {processor.py:154} INFO - Started process (PID=8149) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:42.512+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:42.512+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:42.512+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:42.517+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:42.516+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:42.517+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:42.540+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:38:47.583+0000] {processor.py:154} INFO - Started process (PID=8160) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:47.584+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:47.584+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:47.584+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:47.586+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:47.585+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 17
+    creating_email=DummyOperator(task_id="end")
+    ^
+IndentationError: unexpected indent
+[2023-12-26T09:38:47.586+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:47.608+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.027 seconds
+[2023-12-26T09:38:49.768+0000] {processor.py:154} INFO - Started process (PID=8165) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:49.769+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:49.769+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:49.769+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:49.774+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:49.774+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:49.775+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:49.801+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.036 seconds
+[2023-12-26T09:38:52.074+0000] {processor.py:154} INFO - Started process (PID=8170) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:52.075+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:52.076+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:52.075+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:52.082+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:52.081+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:52.082+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:52.103+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:38:55.618+0000] {processor.py:154} INFO - Started process (PID=8179) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:55.619+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:55.620+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:55.620+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:55.624+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:55.624+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:55.625+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:55.649+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.033 seconds
+[2023-12-26T09:38:59.639+0000] {processor.py:154} INFO - Started process (PID=8189) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:59.640+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:38:59.640+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:59.640+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:59.645+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:38:59.644+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:38:59.645+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:38:59.670+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.034 seconds
+[2023-12-26T09:39:03.700+0000] {processor.py:154} INFO - Started process (PID=8190) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:03.701+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:03.702+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:03.701+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:03.708+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:03.707+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:03.709+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:03.735+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.038 seconds
+[2023-12-26T09:39:05.771+0000] {processor.py:154} INFO - Started process (PID=8192) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:05.772+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:05.773+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:05.773+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:05.778+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:05.777+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:05.778+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:05.801+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.034 seconds
+[2023-12-26T09:39:12.979+0000] {processor.py:154} INFO - Started process (PID=8204) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:12.979+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:12.980+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:12.980+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:12.984+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:12.983+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:12.984+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:13.007+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.030 seconds
+[2023-12-26T09:39:35.026+0000] {processor.py:154} INFO - Started process (PID=8241) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:35.027+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:35.028+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:35.027+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:35.033+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:35.032+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:35.033+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:35.054+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:39:38.042+0000] {processor.py:154} INFO - Started process (PID=8242) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:38.042+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:38.043+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:38.043+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:38.047+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:38.047+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:38.047+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:38.068+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.029 seconds
+[2023-12-26T09:39:50.341+0000] {processor.py:154} INFO - Started process (PID=8258) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:50.342+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:50.342+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:50.342+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:50.347+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:50.346+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:50.347+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:50.369+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:39:53.834+0000] {processor.py:154} INFO - Started process (PID=8275) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:53.834+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:39:53.835+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:53.835+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:53.841+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:39:53.840+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:39:53.841+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:39:53.863+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.033 seconds
+[2023-12-26T09:40:03.241+0000] {processor.py:154} INFO - Started process (PID=8281) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:03.242+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:03.243+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:03.243+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:03.250+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:03.249+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:03.251+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:03.275+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.037 seconds
+[2023-12-26T09:40:09.330+0000] {processor.py:154} INFO - Started process (PID=8292) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:09.331+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:09.331+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:09.331+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:09.335+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:09.335+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:09.335+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:09.357+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.029 seconds
+[2023-12-26T09:40:12.347+0000] {processor.py:154} INFO - Started process (PID=8293) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:12.348+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:12.349+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:12.349+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:12.353+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:12.352+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:12.353+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:12.375+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.030 seconds
+[2023-12-26T09:40:15.560+0000] {processor.py:154} INFO - Started process (PID=8296) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:15.560+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:15.561+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:15.561+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:15.566+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:15.565+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:15.566+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:15.588+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:40:17.573+0000] {processor.py:154} INFO - Started process (PID=8306) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:17.573+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:17.574+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:17.574+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:17.579+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:17.578+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:17.579+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:17.604+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.034 seconds
+[2023-12-26T09:40:24.800+0000] {processor.py:154} INFO - Started process (PID=8323) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:24.806+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:24.808+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:24.807+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:24.812+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:24.811+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 22
+    getting_date >>
+                   ^
+SyntaxError: invalid syntax
+[2023-12-26T09:40:24.814+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:24.842+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.046 seconds
+[2023-12-26T09:40:28.886+0000] {processor.py:154} INFO - Started process (PID=8333) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:28.886+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:28.887+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:28.887+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:28.888+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:28.888+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 22
+    getting_date >> creating_email >>
+                                     ^
+SyntaxError: invalid syntax
+[2023-12-26T09:40:28.889+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:28.911+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.029 seconds
+[2023-12-26T09:40:31.901+0000] {processor.py:154} INFO - Started process (PID=8334) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:31.902+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:31.902+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:31.902+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:31.907+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:31.906+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:31.907+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:31.929+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.030 seconds
+[2023-12-26T09:40:35.957+0000] {processor.py:154} INFO - Started process (PID=8335) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:35.958+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:35.959+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:35.959+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:35.961+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:35.960+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 22
+    getting_date >> creating_email >>  >> sending_newsletter
+                                        ^
+SyntaxError: invalid syntax
+[2023-12-26T09:40:35.961+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:35.985+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.031 seconds
+[2023-12-26T09:40:39.018+0000] {processor.py:154} INFO - Started process (PID=8346) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:39.019+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:40:39.019+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:39.019+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:39.024+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:40:39.023+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 3, in <module>
+    from airflow.operators.latest_only import LastestOnlyOperator
+ImportError: cannot import name 'LastestOnlyOperator' from 'airflow.operators.latest_only' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/latest_only.py)
+[2023-12-26T09:40:39.024+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:40:39.047+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.032 seconds
+[2023-12-26T09:41:03.312+0000] {processor.py:154} INFO - Started process (PID=8383) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:03.313+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:41:03.313+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:03.313+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:03.322+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:03.321+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/newsletter_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/newsletter_dag.py", line 20, in <module>
+    is_latest = LastestOnlyOperator(task_id='is_latest')
+NameError: name 'LastestOnlyOperator' is not defined
+[2023-12-26T09:41:03.322+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:03.344+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.035 seconds
+[2023-12-26T09:41:06.329+0000] {processor.py:154} INFO - Started process (PID=8384) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:06.329+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:41:06.331+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.330+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:06.345+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:06.501+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.501+0000] {manager.py:507} INFO - Created Permission View: can delete on DAG:newsletter_dag
+[2023-12-26T09:41:06.517+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.516+0000] {manager.py:507} INFO - Created Permission View: can read on DAG:newsletter_dag
+[2023-12-26T09:41:06.530+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.530+0000] {manager.py:507} INFO - Created Permission View: can edit on DAG:newsletter_dag
+[2023-12-26T09:41:06.533+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.531+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:41:06.555+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:549 DeprecationWarning: The dag_concurrency option in [core] has been renamed to max_active_tasks_per_dag - the old setting has been used, but please update your config.
+[2023-12-26T09:41:06.555+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.555+0000] {dag.py:2606} INFO - Creating ORM DAG for newsletter_dag
+[2023-12-26T09:41:06.571+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:06.571+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T09:41:06.603+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.277 seconds
+[2023-12-26T09:41:28.004+0000] {processor.py:154} INFO - Started process (PID=8422) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:28.004+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:41:28.005+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:28.005+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:28.021+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:28.043+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:28.043+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:41:28.069+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:28.068+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:41:28.095+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.094 seconds
+[2023-12-26T09:41:58.448+0000] {processor.py:154} INFO - Started process (PID=8470) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:58.449+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:41:58.449+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:58.449+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:58.465+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:41:58.533+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:58.533+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:41:58.556+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:41:58.556+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-23T00:00:00+00:00, run_after=2023-12-24T00:00:00+00:00
+[2023-12-26T09:41:58.579+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.134 seconds
+[2023-12-26T09:42:28.868+0000] {processor.py:154} INFO - Started process (PID=8508) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:42:28.869+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:42:28.869+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:42:28.869+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:42:28.883+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:42:28.916+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:42:28.916+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:42:28.938+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:42:28.938+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:42:28.958+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.093 seconds
+[2023-12-26T09:42:59.238+0000] {processor.py:154} INFO - Started process (PID=8555) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:42:59.238+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:42:59.239+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:42:59.239+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:42:59.255+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:42:59.288+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:42:59.288+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:42:59.312+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:42:59.312+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:42:59.332+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.098 seconds
+[2023-12-26T09:43:29.855+0000] {processor.py:154} INFO - Started process (PID=8602) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:43:29.856+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:43:29.857+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:43:29.857+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:43:29.877+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:43:29.916+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:43:29.915+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:43:29.940+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:43:29.940+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:43:29.962+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.111 seconds
+[2023-12-26T09:44:00.299+0000] {processor.py:154} INFO - Started process (PID=8640) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:44:00.300+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:44:00.300+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:44:00.300+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:44:00.315+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:44:00.354+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:44:00.354+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:44:00.377+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:44:00.377+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:44:00.400+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.104 seconds
+[2023-12-26T09:44:30.863+0000] {processor.py:154} INFO - Started process (PID=8688) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:44:30.864+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:44:30.865+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:44:30.865+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:44:30.882+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:44:30.922+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:44:30.922+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:44:30.948+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:44:30.948+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:44:30.978+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.118 seconds
+[2023-12-26T09:45:01.413+0000] {processor.py:154} INFO - Started process (PID=8736) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:45:01.414+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:45:01.414+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:45:01.414+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:45:01.428+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:45:01.459+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:45:01.459+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:45:01.481+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:45:01.481+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:45:01.500+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.089 seconds
+[2023-12-26T09:45:31.820+0000] {processor.py:154} INFO - Started process (PID=8774) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:45:31.821+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:45:31.821+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:45:31.821+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:45:31.836+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:45:31.871+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:45:31.871+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:45:31.897+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:45:31.896+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:45:31.919+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.102 seconds
+[2023-12-26T09:46:02.308+0000] {processor.py:154} INFO - Started process (PID=8822) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:46:02.309+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:46:02.310+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:46:02.310+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:46:02.328+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:46:02.364+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:46:02.364+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:46:02.390+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:46:02.390+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:46:02.417+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.111 seconds
+[2023-12-26T09:46:32.711+0000] {processor.py:154} INFO - Started process (PID=8869) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:46:32.712+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:46:32.713+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:46:32.713+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:46:32.728+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:46:32.763+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:46:32.762+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:46:32.786+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:46:32.786+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:46:32.807+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.098 seconds
+[2023-12-26T09:47:03.231+0000] {processor.py:154} INFO - Started process (PID=8916) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:47:03.232+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:47:03.233+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:47:03.233+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:47:03.253+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:47:03.302+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:47:03.302+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:47:03.341+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:47:03.340+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:47:03.384+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.157 seconds
+[2023-12-26T09:47:33.726+0000] {processor.py:154} INFO - Started process (PID=8956) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:47:33.726+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:47:33.727+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:47:33.727+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:47:33.742+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:47:33.776+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:47:33.776+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:47:33.798+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:47:33.798+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:47:33.820+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.097 seconds
+[2023-12-26T09:48:04.278+0000] {processor.py:154} INFO - Started process (PID=9003) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:48:04.279+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:48:04.279+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:48:04.279+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:48:04.295+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:48:04.331+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:48:04.331+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:48:04.353+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:48:04.353+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:48:04.375+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.101 seconds
+[2023-12-26T09:48:34.793+0000] {processor.py:154} INFO - Started process (PID=9051) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:48:34.794+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:48:34.795+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:48:34.795+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:48:34.818+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:48:34.863+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:48:34.863+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:48:34.894+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:48:34.894+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:48:34.917+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.127 seconds
+[2023-12-26T09:49:05.322+0000] {processor.py:154} INFO - Started process (PID=9089) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:49:05.322+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:49:05.323+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:49:05.323+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:49:05.340+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:49:05.377+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:49:05.377+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:49:05.401+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:49:05.400+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:49:05.422+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.103 seconds
+[2023-12-26T09:49:35.812+0000] {processor.py:154} INFO - Started process (PID=9136) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:49:35.813+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:49:35.814+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:49:35.814+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:49:35.828+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:49:35.860+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:49:35.860+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:49:35.882+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:49:35.882+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:49:35.904+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.094 seconds
+[2023-12-26T09:50:06.314+0000] {processor.py:154} INFO - Started process (PID=9183) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:50:06.314+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:50:06.315+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:50:06.315+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:50:06.330+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:50:06.362+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:50:06.362+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:50:06.392+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:50:06.391+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:50:06.414+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.103 seconds
+[2023-12-26T09:50:36.823+0000] {processor.py:154} INFO - Started process (PID=9221) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:50:36.823+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:50:36.824+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:50:36.824+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:50:36.839+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:50:36.878+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:50:36.877+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:50:36.907+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:50:36.906+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:50:36.926+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.106 seconds
+[2023-12-26T09:51:07.362+0000] {processor.py:154} INFO - Started process (PID=9268) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:51:07.363+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:51:07.364+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:51:07.363+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:51:07.377+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:51:07.415+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:51:07.415+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:51:07.440+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:51:07.440+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:51:07.463+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.104 seconds
+[2023-12-26T09:51:37.705+0000] {processor.py:154} INFO - Started process (PID=9315) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:51:37.706+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:51:37.706+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:51:37.706+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:51:37.721+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:51:37.756+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:51:37.756+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:51:37.779+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:51:37.778+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:51:37.799+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.097 seconds
+[2023-12-26T09:52:08.121+0000] {processor.py:154} INFO - Started process (PID=9353) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:52:08.122+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:52:08.123+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:52:08.123+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:52:08.141+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:52:08.178+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:52:08.178+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:52:08.203+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:52:08.203+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:52:08.224+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.106 seconds
+[2023-12-26T09:52:38.655+0000] {processor.py:154} INFO - Started process (PID=9400) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:52:38.656+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:52:38.657+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:52:38.656+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:52:38.673+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:52:38.709+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:52:38.709+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:52:38.731+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:52:38.731+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:52:38.754+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.101 seconds
+[2023-12-26T09:53:09.067+0000] {processor.py:154} INFO - Started process (PID=9447) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:53:09.068+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:53:09.068+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:53:09.068+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:53:09.082+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:53:09.113+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:53:09.113+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:53:09.140+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:53:09.140+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:53:09.160+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.096 seconds
+[2023-12-26T09:53:39.611+0000] {processor.py:154} INFO - Started process (PID=9485) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:53:39.612+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:53:39.612+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:53:39.612+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:53:39.626+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:53:39.655+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:53:39.655+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:53:39.678+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:53:39.677+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:53:39.698+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.090 seconds
+[2023-12-26T09:54:10.222+0000] {processor.py:154} INFO - Started process (PID=9523) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:54:10.223+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:54:10.223+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:54:10.223+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:54:10.238+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:54:10.274+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:54:10.274+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:54:10.301+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:54:10.301+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:54:10.322+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.102 seconds
+[2023-12-26T09:54:40.986+0000] {processor.py:154} INFO - Started process (PID=9571) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:54:40.986+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:54:40.987+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:54:40.987+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:54:41.003+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:54:41.044+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:54:41.044+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:54:41.082+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:54:41.082+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:54:41.127+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.144 seconds
+[2023-12-26T09:55:11.930+0000] {processor.py:154} INFO - Started process (PID=9611) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:55:11.931+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:55:11.931+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:55:11.931+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:55:11.946+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:55:11.977+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:55:11.977+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:55:11.998+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:55:11.998+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:55:12.019+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.091 seconds
+[2023-12-26T09:55:42.473+0000] {processor.py:154} INFO - Started process (PID=9659) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:55:42.474+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:55:42.475+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:55:42.475+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:55:42.489+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:55:42.523+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:55:42.522+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:55:42.545+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:55:42.545+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:55:42.566+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.095 seconds
+[2023-12-26T09:56:13.047+0000] {processor.py:154} INFO - Started process (PID=9708) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:56:13.048+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:56:13.048+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:56:13.048+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:56:13.063+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:56:13.097+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:56:13.097+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:56:13.121+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:56:13.121+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:56:13.142+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.098 seconds
+[2023-12-26T09:56:43.690+0000] {processor.py:154} INFO - Started process (PID=9747) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:56:43.690+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:56:43.691+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:56:43.691+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:56:43.706+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:56:43.744+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:56:43.744+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:56:43.768+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:56:43.768+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:56:43.792+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.105 seconds
+[2023-12-26T09:57:14.210+0000] {processor.py:154} INFO - Started process (PID=9795) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:57:14.211+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:57:14.211+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:57:14.211+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:57:14.227+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:57:14.263+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:57:14.262+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:57:14.285+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:57:14.284+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:57:14.306+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.099 seconds
+[2023-12-26T09:57:44.764+0000] {processor.py:154} INFO - Started process (PID=9844) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:57:44.765+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:57:44.766+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:57:44.766+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:57:44.782+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:57:44.826+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:57:44.826+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:57:44.862+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:57:44.862+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:57:44.890+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.128 seconds
+[2023-12-26T09:58:15.379+0000] {processor.py:154} INFO - Started process (PID=9885) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:58:15.380+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:58:15.380+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:58:15.380+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:58:15.398+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:58:15.434+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:58:15.434+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:58:15.459+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:58:15.458+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:58:15.484+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.108 seconds
+[2023-12-26T09:58:45.985+0000] {processor.py:154} INFO - Started process (PID=9933) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:58:45.986+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:58:45.987+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:58:45.986+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:58:46.003+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:58:46.038+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:58:46.038+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:58:46.060+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:58:46.060+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:58:46.080+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.097 seconds
+[2023-12-26T09:59:16.469+0000] {processor.py:154} INFO - Started process (PID=9981) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:59:16.470+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:59:16.470+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:59:16.470+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:59:16.486+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:59:16.520+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:59:16.520+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:59:16.544+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:59:16.544+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:59:16.570+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.104 seconds
+[2023-12-26T09:59:47.008+0000] {processor.py:154} INFO - Started process (PID=10030) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:59:47.008+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T09:59:47.009+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:59:47.009+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:59:47.024+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T09:59:47.064+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:59:47.063+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T09:59:47.098+0000] {logging_mixin.py:120} INFO - [2023-12-26T09:59:47.098+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T09:59:47.125+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.120 seconds
+[2023-12-26T10:00:17.635+0000] {processor.py:154} INFO - Started process (PID=10069) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:00:17.635+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:00:17.636+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:00:17.636+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:00:17.651+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:00:17.684+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:00:17.684+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:00:17.710+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:00:17.710+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:00:17.731+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.099 seconds
+[2023-12-26T10:00:48.499+0000] {processor.py:154} INFO - Started process (PID=10118) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:00:48.500+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:00:48.500+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:00:48.500+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:00:48.516+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:00:48.550+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:00:48.550+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:00:48.573+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:00:48.573+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:00:48.595+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.099 seconds
+[2023-12-26T10:01:19.294+0000] {processor.py:154} INFO - Started process (PID=10166) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:01:19.295+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:01:19.295+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:19.295+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:01:19.310+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:01:19.347+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:19.347+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:01:19.371+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:19.371+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:01:19.398+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.107 seconds
+[2023-12-26T10:01:49.954+0000] {processor.py:154} INFO - Started process (PID=10205) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:01:49.955+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:01:49.955+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:49.955+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:01:49.969+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:01:50.006+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:50.006+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:01:50.029+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:50.028+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:01:50.062+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.111 seconds
+[2023-12-26T10:02:20.588+0000] {processor.py:154} INFO - Started process (PID=10253) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:02:20.589+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:02:20.590+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:20.589+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:02:20.604+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:02:20.643+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:20.643+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:02:20.676+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:20.676+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:02:20.703+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.117 seconds
