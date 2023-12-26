@@ -3260,3 +3260,101 @@
 [2023-12-26T10:01:59.361+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:59.361+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
 [2023-12-26T10:01:59.362+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:01:59.362+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
 [2023-12-26T10:01:59.379+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.264 seconds
+[2023-12-26T10:02:29.755+0000] {processor.py:154} INFO - Started process (PID=10264) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:02:29.755+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:02:29.756+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.756+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:02:29.774+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks_3', 'parent_of_subdag.group_training_tasks', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:02:29.943+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.943+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:02:29.967+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.967+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:02:29.969+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.969+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:02:29.970+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.970+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:02:29.971+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.971+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:02:29.976+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.976+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:02:29.980+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.980+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:02:29.980+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.980+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:02:29.981+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:29.980+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:02:29.995+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.244 seconds
+[2023-12-26T10:03:00.399+0000] {processor.py:154} INFO - Started process (PID=10314) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:03:00.399+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:03:00.400+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.400+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:03:00.417+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag.group_training_tasks_3', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:03:00.591+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.591+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:03:00.613+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.613+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:00.616+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.616+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:03:00.616+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.616+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:03:00.617+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.617+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:03:00.622+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.622+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:03:00.626+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.626+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:03:00.627+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.626+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:03:00.627+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:00.627+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:03:00.642+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.246 seconds
+[2023-12-26T10:03:31.063+0000] {processor.py:154} INFO - Started process (PID=10354) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:03:31.064+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:03:31.064+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.064+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:03:31.082+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks_3', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag.group_training_tasks', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:03:31.250+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.250+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:03:31.278+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.277+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:31.280+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.280+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:03:31.281+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.281+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:03:31.282+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.282+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:03:31.287+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.287+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:03:31.292+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.292+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:03:31.292+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.292+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:03:31.292+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:31.292+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:03:31.310+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.249 seconds
+[2023-12-26T10:04:01.802+0000] {processor.py:154} INFO - Started process (PID=10402) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:04:01.803+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:04:01.803+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:01.803+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:04:01.827+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag.group_training_tasks_3', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:04:02.008+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.008+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:04:02.041+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.041+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:02.044+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.044+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:04:02.045+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.045+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:04:02.047+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.047+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:04:02.054+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.054+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:04:02.059+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.059+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:04:02.060+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.059+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:04:02.060+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:02.060+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:04:02.077+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.278 seconds
+[2023-12-26T10:04:32.390+0000] {processor.py:154} INFO - Started process (PID=10451) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:04:32.390+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:04:32.391+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.391+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:04:32.410+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks_2', 'parent_of_subdag.group_training_tasks_3', 'parent_of_subdag.group_training_tasks', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:04:32.575+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.575+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:04:32.598+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.598+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:32.600+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.600+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:04:32.601+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.601+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:04:32.602+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.602+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:04:32.607+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.607+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:04:32.611+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.611+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:04:32.612+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.612+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:04:32.612+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:32.612+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:04:32.627+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.240 seconds
+[2023-12-26T10:05:02.899+0000] {processor.py:154} INFO - Started process (PID=10490) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:05:02.900+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:05:02.901+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:02.900+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:05:02.919+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag.group_training_tasks_3', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:05:03.101+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.101+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:05:03.125+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.125+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:05:03.127+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.127+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:05:03.128+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.128+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:05:03.129+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.129+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:05:03.136+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.135+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:05:03.140+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.140+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:05:03.140+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.140+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:05:03.141+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:03.141+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:05:03.160+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.263 seconds
+[2023-12-26T10:05:33.323+0000] {processor.py:154} INFO - Started process (PID=10539) to work on /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:05:33.323+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2023-12-26T10:05:33.324+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.324+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:05:33.342+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag.group_training_tasks_3', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2023-12-26T10:05:33.506+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.506+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2023-12-26T10:05:33.532+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.532+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:05:33.535+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.535+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:05:33.536+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.535+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:05:33.536+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.536+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:05:33.541+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.541+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2023-12-26T10:05:33.546+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.546+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2023-12-26T10:05:33.546+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.546+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2023-12-26T10:05:33.547+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:33.547+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2023-12-26T10:05:33.563+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.243 seconds

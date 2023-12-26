@@ -1636,3 +1636,45 @@
 [2023-12-26T10:02:12.475+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:12.475+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:02:12.505+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:12.504+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
 [2023-12-26T10:02:12.535+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.135 seconds
+[2023-12-26T10:02:43.031+0000] {processor.py:154} INFO - Started process (PID=10276) to work on /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:02:43.032+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2023-12-26T10:02:43.033+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:43.033+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:02:43.050+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:02:43.087+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:43.087+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:02:43.128+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:43.127+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:02:43.159+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.131 seconds
+[2023-12-26T10:03:13.697+0000] {processor.py:154} INFO - Started process (PID=10326) to work on /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:03:13.698+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2023-12-26T10:03:13.698+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:13.698+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:03:13.716+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:03:13.755+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:13.755+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:13.794+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:13.792+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:13.823+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.129 seconds
+[2023-12-26T10:03:44.394+0000] {processor.py:154} INFO - Started process (PID=10373) to work on /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:03:44.395+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2023-12-26T10:03:44.395+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:44.395+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:03:44.423+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:03:44.477+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:44.476+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:44.547+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:44.547+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:44.642+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.253 seconds
+[2023-12-26T10:04:15.059+0000] {processor.py:154} INFO - Started process (PID=10414) to work on /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:04:15.060+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2023-12-26T10:04:15.060+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:15.060+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:04:15.079+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:04:15.122+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:15.122+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:15.147+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:15.146+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:15.176+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.120 seconds
+[2023-12-26T10:04:45.710+0000] {processor.py:154} INFO - Started process (PID=10463) to work on /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:04:45.711+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2023-12-26T10:04:45.711+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:45.711+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:04:45.728+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:04:45.772+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:45.772+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:45.802+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:45.801+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:45.828+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.121 seconds
+[2023-12-26T10:05:16.086+0000] {processor.py:154} INFO - Started process (PID=10512) to work on /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:05:16.087+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2023-12-26T10:05:16.087+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:16.087+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:05:16.109+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2023-12-26T10:05:16.156+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:16.156+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:05:16.187+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:16.187+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:05:16.209+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.126 seconds

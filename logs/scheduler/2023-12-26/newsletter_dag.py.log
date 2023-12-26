@@ -973,3 +973,45 @@ NameError: name 'LastestOnlyOperator' is not defined
 [2023-12-26T10:02:20.643+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:20.643+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:02:20.676+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:20.676+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
 [2023-12-26T10:02:20.703+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.117 seconds
+[2023-12-26T10:02:51.236+0000] {processor.py:154} INFO - Started process (PID=10302) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:02:51.236+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:02:51.237+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:51.237+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:02:51.257+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:02:51.292+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:51.291+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:02:51.316+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:51.316+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:02:51.344+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.111 seconds
+[2023-12-26T10:03:21.901+0000] {processor.py:154} INFO - Started process (PID=10352) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:03:21.901+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:03:21.902+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:21.902+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:03:21.916+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:03:21.955+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:21.955+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:21.984+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:21.984+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:03:22.008+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.110 seconds
+[2023-12-26T10:03:52.617+0000] {processor.py:154} INFO - Started process (PID=10391) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:03:52.618+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:03:52.619+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:52.618+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:03:52.639+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:03:52.684+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:52.684+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:52.718+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:52.717+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:03:52.743+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.130 seconds
+[2023-12-26T10:04:23.220+0000] {processor.py:154} INFO - Started process (PID=10440) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:04:23.221+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:04:23.222+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:23.222+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:04:23.239+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:04:23.284+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:23.284+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:23.309+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:23.309+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:04:23.334+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.117 seconds
+[2023-12-26T10:04:53.738+0000] {processor.py:154} INFO - Started process (PID=10488) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:04:53.738+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:04:53.739+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:53.739+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:04:53.755+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:04:53.794+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:53.794+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:53.824+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:53.824+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:04:53.847+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.111 seconds
+[2023-12-26T10:05:24.168+0000] {processor.py:154} INFO - Started process (PID=10528) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:05:24.169+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:05:24.169+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:24.169+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:05:24.184+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:05:24.219+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:24.218+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:05:24.243+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:24.243+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:05:24.266+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.102 seconds

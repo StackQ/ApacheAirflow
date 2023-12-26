@@ -1636,3 +1636,45 @@
 [2023-12-26T10:02:18.388+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:18.388+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:02:18.412+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:18.412+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
 [2023-12-26T10:02:18.433+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.169 seconds
+[2023-12-26T10:02:48.929+0000] {processor.py:154} INFO - Started process (PID=10297) to work on /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:02:48.930+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_postgres_dag.py for tasks to queue
+[2023-12-26T10:02:48.931+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:48.930+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:02:48.997+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_postgres_dag']) retrieved from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:02:49.046+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:49.045+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:02:49.072+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:49.072+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:02:49.097+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.171 seconds
+[2023-12-26T10:03:19.578+0000] {processor.py:154} INFO - Started process (PID=10337) to work on /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:03:19.578+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_postgres_dag.py for tasks to queue
+[2023-12-26T10:03:19.579+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:19.579+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:03:19.656+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_postgres_dag']) retrieved from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:03:19.693+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:19.693+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:19.718+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:19.718+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:19.738+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.164 seconds
+[2023-12-26T10:03:50.329+0000] {processor.py:154} INFO - Started process (PID=10386) to work on /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:03:50.330+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_postgres_dag.py for tasks to queue
+[2023-12-26T10:03:50.331+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:50.331+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:03:50.403+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_postgres_dag']) retrieved from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:03:50.438+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:50.438+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:50.462+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:50.462+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:50.482+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.156 seconds
+[2023-12-26T10:04:20.899+0000] {processor.py:154} INFO - Started process (PID=10435) to work on /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:04:20.900+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_postgres_dag.py for tasks to queue
+[2023-12-26T10:04:20.901+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:20.901+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:04:20.972+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_postgres_dag']) retrieved from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:04:21.011+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:21.011+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:21.046+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:21.045+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:21.071+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.175 seconds
+[2023-12-26T10:04:51.378+0000] {processor.py:154} INFO - Started process (PID=10474) to work on /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:04:51.380+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_postgres_dag.py for tasks to queue
+[2023-12-26T10:04:51.381+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:51.381+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:04:51.468+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_postgres_dag']) retrieved from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:04:51.516+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:51.516+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:51.553+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:51.552+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:51.579+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.205 seconds
+[2023-12-26T10:05:21.838+0000] {processor.py:154} INFO - Started process (PID=10523) to work on /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:05:21.839+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_postgres_dag.py for tasks to queue
+[2023-12-26T10:05:21.840+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:21.840+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:05:21.940+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_postgres_dag']) retrieved from /opt/airflow/dags/my_postgres_dag.py
+[2023-12-26T10:05:21.985+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:21.985+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:05:22.011+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:22.010+0000] {dag.py:3340} INFO - Setting next_dagrun for my_postgres_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:05:22.034+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_postgres_dag.py took 0.202 seconds

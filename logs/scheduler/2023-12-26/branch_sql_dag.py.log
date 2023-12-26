@@ -1636,3 +1636,45 @@
 [2023-12-26T10:02:17.066+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:17.066+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:02:17.090+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:17.090+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
 [2023-12-26T10:02:17.110+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.187 seconds
+[2023-12-26T10:02:47.662+0000] {processor.py:154} INFO - Started process (PID=10284) to work on /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:02:47.664+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/branch_sql_dag.py for tasks to queue
+[2023-12-26T10:02:47.665+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:47.665+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:02:47.781+0000] {processor.py:766} INFO - DAG(s) dict_keys(['branch_sql_dag']) retrieved from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:02:47.835+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:47.835+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:02:47.867+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:02:47.867+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:02:47.892+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.233 seconds
+[2023-12-26T10:03:18.215+0000] {processor.py:154} INFO - Started process (PID=10334) to work on /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:03:18.215+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/branch_sql_dag.py for tasks to queue
+[2023-12-26T10:03:18.216+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:18.216+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:03:18.287+0000] {processor.py:766} INFO - DAG(s) dict_keys(['branch_sql_dag']) retrieved from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:03:18.320+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:18.320+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:18.343+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:18.343+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:18.373+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.161 seconds
+[2023-12-26T10:03:49.017+0000] {processor.py:154} INFO - Started process (PID=10383) to work on /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:03:49.018+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/branch_sql_dag.py for tasks to queue
+[2023-12-26T10:03:49.019+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:49.018+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:03:49.089+0000] {processor.py:766} INFO - DAG(s) dict_keys(['branch_sql_dag']) retrieved from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:03:49.120+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:49.120+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:03:49.142+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:03:49.142+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:03:49.163+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.148 seconds
+[2023-12-26T10:04:19.589+0000] {processor.py:154} INFO - Started process (PID=10432) to work on /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:04:19.590+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/branch_sql_dag.py for tasks to queue
+[2023-12-26T10:04:19.590+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:19.590+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:04:19.661+0000] {processor.py:766} INFO - DAG(s) dict_keys(['branch_sql_dag']) retrieved from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:04:19.695+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:19.695+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:19.721+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:19.721+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:19.743+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.157 seconds
+[2023-12-26T10:04:50.161+0000] {processor.py:154} INFO - Started process (PID=10471) to work on /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:04:50.162+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/branch_sql_dag.py for tasks to queue
+[2023-12-26T10:04:50.163+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:50.162+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:04:50.244+0000] {processor.py:766} INFO - DAG(s) dict_keys(['branch_sql_dag']) retrieved from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:04:50.285+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:50.284+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:04:50.312+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:04:50.312+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:04:50.337+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.179 seconds
+[2023-12-26T10:05:20.543+0000] {processor.py:154} INFO - Started process (PID=10520) to work on /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:05:20.544+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/branch_sql_dag.py for tasks to queue
+[2023-12-26T10:05:20.545+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:20.544+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:05:20.607+0000] {processor.py:766} INFO - DAG(s) dict_keys(['branch_sql_dag']) retrieved from /opt/airflow/dags/branch_sql_dag.py
+[2023-12-26T10:05:20.641+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:20.641+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:05:20.663+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:20.662+0000] {dag.py:3340} INFO - Setting next_dagrun for branch_sql_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:05:20.683+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/branch_sql_dag.py took 0.142 seconds
