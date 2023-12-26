@@ -1,0 +1,34 @@
+[2023-12-26T08:46:03.028+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: sensor_parent_dag.start scheduled__2023-12-26T07:10:00+00:00 [queued]>
+[2023-12-26T08:46:03.044+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: sensor_parent_dag.start scheduled__2023-12-26T07:10:00+00:00 [queued]>
+[2023-12-26T08:46:03.044+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T08:46:03.044+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-26T08:46:03.044+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-26T08:46:03.071+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): start> on 2023-12-26 07:10:00+00:00
+[2023-12-26T08:46:03.079+0000] {standard_task_runner.py:55} INFO - Started process 2051 to run task
+[2023-12-26T08:46:03.084+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'sensor_parent_dag', 'start', 'scheduled__2023-12-26T07:10:00+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/sensor_parent_dag.py', '--cfg-path', '/tmp/tmpwpmkyrsf']
+[2023-12-26T08:46:03.085+0000] {standard_task_runner.py:83} INFO - Job 169: Subtask start
+[2023-12-26T08:46:03.106+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-26T08:46:03.174+0000] {task_command.py:376} INFO - Running <TaskInstance: sensor_parent_dag.start scheduled__2023-12-26T07:10:00+00:00 [running]> on host d2fc15a9183d
+[2023-12-26T08:46:03.220+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-26T08:46:03.273+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=sensor_parent_dag
+AIRFLOW_CTX_TASK_ID=start
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-26T07:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-26T07:10:00+00:00
+[2023-12-26T08:46:03.274+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-12-26T08:46:03.274+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "echo 'start'"]
+[2023-12-26T08:46:03.292+0000] {subprocess.py:86} INFO - Output:
+[2023-12-26T08:46:03.295+0000] {subprocess.py:93} INFO - start
+[2023-12-26T08:46:03.296+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-12-26T08:46:03.329+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=sensor_parent_dag, task_id=start, execution_date=20231226T071000, start_date=20231226T084603, end_date=20231226T084603
+[2023-12-26T08:46:03.374+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-12-26T08:46:03.409+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,35 @@
+[2023-12-25T21:12:00.938+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: parent_dag.process_ml scheduled__2023-12-24T00:00:00+00:00 [queued]>
+[2023-12-25T21:12:00.946+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: parent_dag.process_ml scheduled__2023-12-24T00:00:00+00:00 [queued]>
+[2023-12-25T21:12:00.946+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T21:12:00.946+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-12-25T21:12:00.946+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-12-25T21:12:00.963+0000] {taskinstance.py:1383} INFO - Executing <Task(TriggerDagRunOperator): process_ml> on 2023-12-24 00:00:00+00:00
+[2023-12-25T21:12:00.969+0000] {standard_task_runner.py:55} INFO - Started process 380 to run task
+[2023-12-25T21:12:00.971+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'parent_dag', 'process_ml', 'scheduled__2023-12-24T00:00:00+00:00', '--job-id', '155', '--raw', '--subdir', 'DAGS_FOLDER/parent_dag.py', '--cfg-path', '/tmp/tmpnt8fqwyn']
+[2023-12-25T21:12:00.972+0000] {standard_task_runner.py:83} INFO - Job 155: Subtask process_ml
+[2023-12-25T21:12:00.987+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-25T21:12:01.024+0000] {task_command.py:376} INFO - Running <TaskInstance: parent_dag.process_ml scheduled__2023-12-24T00:00:00+00:00 [running]> on host d2fc15a9183d
+[2023-12-25T21:12:01.056+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:549: DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+  option = self._get_option_from_config_file(deprecated_key, deprecated_section, key, kwargs, section)
+
+[2023-12-25T21:12:01.090+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=parent_dag
+AIRFLOW_CTX_TASK_ID=process_ml
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-24T00:00:00+00:00
+[2023-12-25T21:12:01.165+0000] {trigger_dagrun.py:175} INFO - Waiting for target_dag on 2023-12-24T00:00:00+00:00 to become allowed state ['success'] ...
+[2023-12-25T21:13:01.242+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/trigger_dagrun.py", line 182, in execute
+    raise AirflowException(f"{self.trigger_dag_id} failed with failed states {state}")
+airflow.exceptions.AirflowException: target_dag failed with failed states failed
+[2023-12-25T21:13:01.244+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=parent_dag, task_id=process_ml, execution_date=20231224T000000, start_date=20231225T211200, end_date=20231225T211301
+[2023-12-25T21:13:01.258+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 155 for task process_ml (target_dag failed with failed states failed; 380)
+[2023-12-25T21:13:01.296+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-12-25T21:13:01.326+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
