@@ -1,0 +1,7 @@
+[2024-01-16T11:10:54.863+0000] {processor.py:154} INFO - Started process (PID=66) to work on /opt/airflow/dags/parent_dag.py
+[2024-01-16T11:10:54.865+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2024-01-16T11:10:54.865+0000] {logging_mixin.py:120} INFO - [2024-01-16T11:10:54.865+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2024-01-16T11:10:54.888+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_dag']) retrieved from /opt/airflow/dags/parent_dag.py
+[2024-01-16T11:10:54.936+0000] {logging_mixin.py:120} INFO - [2024-01-16T11:10:54.936+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-01-16T11:10:54.972+0000] {logging_mixin.py:120} INFO - [2024-01-16T11:10:54.972+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_dag to 2024-01-15T00:00:00+00:00, run_after=2024-01-16T00:00:00+00:00
+[2024-01-16T11:10:55.005+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.144 seconds

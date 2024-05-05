@@ -181,3 +181,10 @@ SyntaxError: EOL while scanning string literal
 [2023-12-26T10:05:31.355+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:31.354+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:05:31.376+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:31.376+0000] {dag.py:3340} INFO - Setting next_dagrun for dummy_dag to 2023-12-23T00:00:00+00:00, run_after=2023-12-24T00:00:00+00:00
 [2023-12-26T10:05:31.396+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dummy_dag.py took 0.093 seconds
+[2023-12-26T10:06:01.755+0000] {processor.py:154} INFO - Started process (PID=10586) to work on /opt/airflow/dags/dummy_dag.py
+[2023-12-26T10:06:01.755+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/dummy_dag.py for tasks to queue
+[2023-12-26T10:06:01.756+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:06:01.756+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/dummy_dag.py
+[2023-12-26T10:06:01.771+0000] {processor.py:766} INFO - DAG(s) dict_keys(['dummy_dag']) retrieved from /opt/airflow/dags/dummy_dag.py
+[2023-12-26T10:06:01.811+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:06:01.811+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:06:01.841+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:06:01.841+0000] {dag.py:3340} INFO - Setting next_dagrun for dummy_dag to 2023-12-23T00:00:00+00:00, run_after=2023-12-24T00:00:00+00:00
+[2023-12-26T10:06:01.862+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dummy_dag.py took 0.110 seconds

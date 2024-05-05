@@ -1918,3 +1918,11 @@
 [2023-12-26T10:05:20.877+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:20.877+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:05:20.902+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:20.902+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
 [2023-12-26T10:05:20.925+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_dag.py took 0.105 seconds
+[2023-12-26T10:05:51.330+0000] {processor.py:154} INFO - Started process (PID=10570) to work on /opt/airflow/dags/my_BranchPythonOperator_dag.py
+[2023-12-26T10:05:51.331+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_BranchPythonOperator_dag.py for tasks to queue
+[2023-12-26T10:05:51.332+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:51.332+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchPythonOperator_dag.py
+[2023-12-26T10:05:51.346+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:408 RemovedInAirflow3Warning: none_failed_or_skipped Trigger Rule is deprecated. Please use `none_failed_min_one_success`.
+[2023-12-26T10:05:51.355+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_BranchPythonOperator_dag']) retrieved from /opt/airflow/dags/my_BranchPythonOperator_dag.py
+[2023-12-26T10:05:51.396+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:51.396+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:05:51.418+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:51.418+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_dag to 2023-12-25T00:00:00+00:00, run_after=2023-12-26T00:00:00+00:00
+[2023-12-26T10:05:51.439+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_dag.py took 0.113 seconds

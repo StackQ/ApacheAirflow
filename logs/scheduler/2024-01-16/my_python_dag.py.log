@@ -1,0 +1,8 @@
+[2024-01-16T11:10:57.219+0000] {processor.py:154} INFO - Started process (PID=80) to work on /opt/airflow/dags/my_python_dag.py
+[2024-01-16T11:10:57.219+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_python_dag.py for tasks to queue
+[2024-01-16T11:10:57.220+0000] {logging_mixin.py:120} INFO - [2024-01-16T11:10:57.220+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_python_dag.py
+[2024-01-16T11:10:57.245+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/configuration.py:549 DeprecationWarning: The sensitive_variable_fields option in [admin] has been moved to the sensitive_var_conn_names option in [core] - the old setting has been used, but please update your config.
+[2024-01-16T11:10:57.255+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_python_dag']) retrieved from /opt/airflow/dags/my_python_dag.py
+[2024-01-16T11:10:57.292+0000] {logging_mixin.py:120} INFO - [2024-01-16T11:10:57.292+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-01-16T11:10:57.329+0000] {logging_mixin.py:120} INFO - [2024-01-16T11:10:57.329+0000] {dag.py:3340} INFO - Setting next_dagrun for my_python_dag to 2024-01-15T00:00:00+00:00, run_after=2024-01-16T00:00:00+00:00
+[2024-01-16T11:10:57.380+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_python_dag.py took 0.164 seconds

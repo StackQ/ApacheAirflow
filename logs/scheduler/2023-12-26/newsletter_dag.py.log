@@ -1015,3 +1015,10 @@ NameError: name 'LastestOnlyOperator' is not defined
 [2023-12-26T10:05:24.219+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:24.218+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2023-12-26T10:05:24.243+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:24.243+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
 [2023-12-26T10:05:24.266+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.102 seconds
+[2023-12-26T10:05:54.623+0000] {processor.py:154} INFO - Started process (PID=10576) to work on /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:05:54.624+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2023-12-26T10:05:54.624+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:54.624+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:05:54.639+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2023-12-26T10:05:54.672+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:54.672+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2023-12-26T10:05:54.695+0000] {logging_mixin.py:120} INFO - [2023-12-26T10:05:54.695+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2023-12-26T00:00:00+00:00, run_after=2023-12-27T00:00:00+00:00
+[2023-12-26T10:05:54.717+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.097 seconds
