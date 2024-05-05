@@ -26057,3 +26057,186 @@ Traceback (most recent call last):
 sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.18.0.4), port 5432 failed: FATAL:  the database system is shutting down
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-05-05T18:11:29.438+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2024-05-05T18:11:29.439+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2024-05-05T18:11:29.440+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-05T18:11:29.440+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2024-05-05T18:11:29.447+0000] {manager.py:727} INFO - There are 21 files in /opt/airflow/dags
+[2024-05-05T18:11:29.776+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/newsletter_dag.py                           58  0.03s             0           0
+/opt/airflow/dags/branch_sql_dag.py                                                 0           0
+/opt/airflow/dags/my_postgres_dag.py                                                0           0
+/opt/airflow/dags/my_python_dag.py                                                  0           0
+/opt/airflow/dags/sensor_parent_dag.py                                              0           0
+/opt/airflow/dags/branch_week_dag.py                                                0           0
+/opt/airflow/dags/context.py                                                        0           0
+/opt/airflow/dags/my_bash_dag.py                                                    0           0
+/opt/airflow/dags/parent_dag.py                                                     0           0
+/opt/airflow/dags/parent_of_subdag.py                                               0           0
+/opt/airflow/dags/dummy_dag.py                                57  0.04s             0           0
+/opt/airflow/dags/target_dag.py                                                     0           0
+/opt/airflow/dags/sensor_target_dag.py                                              0           0
+/opt/airflow/dags/my_BranchPythonOperator_dag.py                                    0           0
+/opt/airflow/dags/task_group.py                                                     0           0
+/opt/airflow/dags/parent_of_task_group.py                                           0           0
+/opt/airflow/dags/my_BranchDateTimeOperator_dag.py                                  0           0
+/opt/airflow/dags/shortcircuit_dag.py                                               0           0
+/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py                           0           0
+/opt/airflow/dags/subdag.py                                                         0           0
+/opt/airflow/dags/my_python_TaskFlow_API_dag.py                                     0           0
+================================================================================
+[2024-05-05T18:12:56.279+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2024-05-05T18:12:56.302+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2024-05-05T18:12:56.302+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-05T18:12:56.302+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2024-05-05T18:12:56.418+0000] {manager.py:727} INFO - There are 21 files in /opt/airflow/dags
+[2024-05-05T18:12:56.827+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/newsletter_dag.py                           57  0.12s             0           0
+/opt/airflow/dags/branch_sql_dag.py                                                 0           0
+/opt/airflow/dags/my_postgres_dag.py                                                0           0
+/opt/airflow/dags/my_python_dag.py                                                  0           0
+/opt/airflow/dags/sensor_parent_dag.py                                              0           0
+/opt/airflow/dags/branch_week_dag.py                                                0           0
+/opt/airflow/dags/context.py                                                        0           0
+/opt/airflow/dags/my_bash_dag.py                                                    0           0
+/opt/airflow/dags/parent_dag.py                                                     0           0
+/opt/airflow/dags/parent_of_subdag.py                                               0           0
+/opt/airflow/dags/dummy_dag.py                                56  0.14s             0           0
+/opt/airflow/dags/target_dag.py                                                     0           0
+/opt/airflow/dags/sensor_target_dag.py                                              0           0
+/opt/airflow/dags/my_BranchPythonOperator_dag.py                                    0           0
+/opt/airflow/dags/task_group.py                                                     0           0
+/opt/airflow/dags/parent_of_task_group.py                                           0           0
+/opt/airflow/dags/my_BranchDateTimeOperator_dag.py                                  0           0
+/opt/airflow/dags/shortcircuit_dag.py                                               0           0
+/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py                           0           0
+/opt/airflow/dags/subdag.py                                                         0           0
+/opt/airflow/dags/my_python_TaskFlow_API_dag.py                                     0           0
+================================================================================
+[2024-05-05T18:13:29.876+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2024-05-05T18:13:29.882+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2024-05-05T18:13:29.882+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-05-05T18:13:29.883+0000] {manager.py:724} INFO - Searching for files in /opt/airflow/dags
+[2024-05-05T18:13:29.901+0000] {manager.py:727} INFO - There are 21 files in /opt/airflow/dags
+[2024-05-05T18:13:29.979+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/newsletter_dag.py                           35  0.02s             0           0
+/opt/airflow/dags/branch_sql_dag.py                                                 0           0
+/opt/airflow/dags/my_postgres_dag.py                                                0           0
+/opt/airflow/dags/my_python_dag.py                                                  0           0
+/opt/airflow/dags/sensor_parent_dag.py                                              0           0
+/opt/airflow/dags/branch_week_dag.py                                                0           0
+/opt/airflow/dags/context.py                                                        0           0
+/opt/airflow/dags/my_bash_dag.py                                                    0           0
+/opt/airflow/dags/parent_dag.py                                                     0           0
+/opt/airflow/dags/parent_of_subdag.py                                               0           0
+/opt/airflow/dags/dummy_dag.py                                34  0.03s             0           0
+/opt/airflow/dags/target_dag.py                                                     0           0
+/opt/airflow/dags/sensor_target_dag.py                                              0           0
+/opt/airflow/dags/my_BranchPythonOperator_dag.py                                    0           0
+/opt/airflow/dags/task_group.py                                                     0           0
+/opt/airflow/dags/parent_of_task_group.py                                           0           0
+/opt/airflow/dags/my_BranchDateTimeOperator_dag.py                                  0           0
+/opt/airflow/dags/shortcircuit_dag.py                                               0           0
+/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py                           0           0
+/opt/airflow/dags/subdag.py                                                         0           0
+/opt/airflow/dags/my_python_TaskFlow_API_dag.py                                     0           0
+================================================================================
+[2024-05-05T18:14:00.170+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/task_group.py                                                     0           0  0.06s           2024-05-05T18:13:30
+/opt/airflow/dags/subdag.py                                                         0           0  0.04s           2024-05-05T18:13:31
+/opt/airflow/dags/newsletter_dag.py                           83  0.01s             1           0  0.18s           2024-05-05T18:13:30
+/opt/airflow/dags/branch_sql_dag.py                                                 1           0  0.61s           2024-05-05T18:13:32
+/opt/airflow/dags/my_postgres_dag.py                                                1           0  0.86s           2024-05-05T18:13:33
+/opt/airflow/dags/my_python_dag.py                                                  1           0  0.43s           2024-05-05T18:13:33
+/opt/airflow/dags/sensor_parent_dag.py                                              1           0  0.21s           2024-05-05T18:13:30
+/opt/airflow/dags/branch_week_dag.py                                                1           0  0.28s           2024-05-05T18:13:31
+/opt/airflow/dags/context.py                                                        1           0  0.59s           2024-05-05T18:13:34
+/opt/airflow/dags/my_bash_dag.py                                                    1           0  0.48s           2024-05-05T18:13:32
+/opt/airflow/dags/parent_dag.py                                                     1           0  0.25s           2024-05-05T18:13:30
+/opt/airflow/dags/dummy_dag.py                                82  0.01s             1           0  0.21s           2024-05-05T18:13:30
+/opt/airflow/dags/target_dag.py                                                     1           0  0.16s           2024-05-05T18:13:30
+/opt/airflow/dags/sensor_target_dag.py                                              1           0  0.50s           2024-05-05T18:13:30
+/opt/airflow/dags/my_BranchPythonOperator_dag.py                                    1           0  0.47s           2024-05-05T18:13:32
+/opt/airflow/dags/parent_of_task_group.py                                           1           0  0.26s           2024-05-05T18:13:31
+/opt/airflow/dags/my_BranchDateTimeOperator_dag.py                                  1           0  0.32s           2024-05-05T18:13:31
+/opt/airflow/dags/shortcircuit_dag.py                                               1           0  0.16s           2024-05-05T18:13:30
+/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py                           1           0  0.24s           2024-05-05T18:13:31
+/opt/airflow/dags/my_python_TaskFlow_API_dag.py                                     1           0  0.63s           2024-05-05T18:13:33
+/opt/airflow/dags/parent_of_subdag.py                                               4           0  0.32s           2024-05-05T18:13:31
+================================================================================
+[2024-05-05T18:14:30.725+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/task_group.py                                                     0           0  0.03s           2024-05-05T18:14:01
+/opt/airflow/dags/subdag.py                                                         0           0  0.03s           2024-05-05T18:14:01
+/opt/airflow/dags/newsletter_dag.py                          123  0.01s             1           0  0.21s           2024-05-05T18:14:00
+/opt/airflow/dags/branch_sql_dag.py                                                 1           0  0.15s           2024-05-05T18:14:02
+/opt/airflow/dags/my_postgres_dag.py                                                1           0  0.23s           2024-05-05T18:14:03
+/opt/airflow/dags/my_python_dag.py                                                  1           0  0.11s           2024-05-05T18:14:03
+/opt/airflow/dags/sensor_parent_dag.py                                              1           0  0.13s           2024-05-05T18:14:01
+/opt/airflow/dags/branch_week_dag.py                                                1           0  0.11s           2024-05-05T18:14:02
+/opt/airflow/dags/context.py                                                        1           0  0.13s           2024-05-05T18:14:04
+/opt/airflow/dags/my_bash_dag.py                                                    1           0  0.16s           2024-05-05T18:14:03
+/opt/airflow/dags/parent_dag.py                                                     1           0  0.14s           2024-05-05T18:14:01
+/opt/airflow/dags/dummy_dag.py                               122  0.01s             1           0  0.16s           2024-05-05T18:14:00
+/opt/airflow/dags/target_dag.py                                                     1           0  0.10s           2024-05-05T18:14:01
+/opt/airflow/dags/sensor_target_dag.py                                              1           0  0.30s           2024-05-05T18:14:01
+/opt/airflow/dags/my_BranchPythonOperator_dag.py                                    1           0  0.15s           2024-05-05T18:14:03
+/opt/airflow/dags/parent_of_task_group.py                                           1           0  0.10s           2024-05-05T18:14:01
+/opt/airflow/dags/my_BranchDateTimeOperator_dag.py                                  1           0  0.12s           2024-05-05T18:14:02
+/opt/airflow/dags/shortcircuit_dag.py                                               1           0  0.15s           2024-05-05T18:14:00
+/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py                           1           0  0.12s           2024-05-05T18:14:02
+/opt/airflow/dags/my_python_TaskFlow_API_dag.py                                     1           0  0.15s           2024-05-05T18:14:04
+/opt/airflow/dags/parent_of_subdag.py                                               4           0  0.26s           2024-05-05T18:14:01
+================================================================================
+[2024-05-05T18:15:01.006+0000] {manager.py:846} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/task_group.py                                                     0           0  0.05s           2024-05-05T18:14:32
+/opt/airflow/dags/subdag.py                                                         0           0  0.05s           2024-05-05T18:14:32
+/opt/airflow/dags/newsletter_dag.py                          173  0.00s             1           0  0.20s           2024-05-05T18:14:30
+/opt/airflow/dags/branch_sql_dag.py                                                 1           0  0.23s           2024-05-05T18:14:33
+/opt/airflow/dags/my_postgres_dag.py                                                1           0  0.15s           2024-05-05T18:14:33
+/opt/airflow/dags/my_python_dag.py                                                  1           0  0.13s           2024-05-05T18:14:33
+/opt/airflow/dags/sensor_parent_dag.py                                              1           0  0.21s           2024-05-05T18:14:32
+/opt/airflow/dags/branch_week_dag.py                                                1           0  0.17s           2024-05-05T18:14:32
+/opt/airflow/dags/context.py                                                        1           0  0.15s           2024-05-05T18:14:34
+/opt/airflow/dags/my_bash_dag.py                                                    1           0  0.12s           2024-05-05T18:14:33
+/opt/airflow/dags/parent_dag.py                                                     1           0  0.19s           2024-05-05T18:14:32
+/opt/airflow/dags/dummy_dag.py                               172  0.01s             1           0  0.16s           2024-05-05T18:14:30
+/opt/airflow/dags/target_dag.py                                                     1           0  0.15s           2024-05-05T18:14:32
+/opt/airflow/dags/sensor_target_dag.py                                              1           0  0.68s           2024-05-05T18:14:32
+/opt/airflow/dags/my_BranchPythonOperator_dag.py                                    1           0  0.12s           2024-05-05T18:14:33
+/opt/airflow/dags/parent_of_task_group.py                                           1           0  0.19s           2024-05-05T18:14:32
+/opt/airflow/dags/my_BranchDateTimeOperator_dag.py                                  1           0  0.18s           2024-05-05T18:14:33
+/opt/airflow/dags/shortcircuit_dag.py                                               1           0  0.16s           2024-05-05T18:14:31
+/opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py                           1           0  0.17s           2024-05-05T18:14:33
+/opt/airflow/dags/my_python_TaskFlow_API_dag.py                                     1           0  0.17s           2024-05-05T18:14:34
+/opt/airflow/dags/parent_of_subdag.py                                               4           0  0.42s           2024-05-05T18:14:33
+================================================================================

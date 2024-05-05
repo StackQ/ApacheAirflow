@@ -1,0 +1,35 @@
+[2024-05-05T18:11:31.515+0000] {processor.py:154} INFO - Started process (PID=79) to work on /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:11:31.515+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py for tasks to queue
+[2024-05-05T18:11:31.516+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:11:31.516+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:11:31.539+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_BranchPythonOperator_calendar_dag']) retrieved from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:11:31.639+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:11:31.639+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:11:31.685+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:11:31.685+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_calendar_dag to 2024-05-04T00:00:00+00:00, run_after=2024-05-05T00:00:00+00:00
+[2024-05-05T18:11:31.717+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py took 0.207 seconds
+[2024-05-05T18:13:31.756+0000] {processor.py:154} INFO - Started process (PID=55) to work on /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:13:31.757+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py for tasks to queue
+[2024-05-05T18:13:31.758+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:13:31.757+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:13:31.789+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_BranchPythonOperator_calendar_dag']) retrieved from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:13:31.855+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:13:31.855+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:13:31.901+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:13:31.901+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_calendar_dag to 2024-05-04T00:00:00+00:00, run_after=2024-05-05T00:00:00+00:00
+[2024-05-05T18:13:31.966+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py took 0.215 seconds
+[2024-05-05T18:14:02.033+0000] {processor.py:154} INFO - Started process (PID=95) to work on /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:14:02.033+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py for tasks to queue
+[2024-05-05T18:14:02.034+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:02.034+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:14:02.049+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_BranchPythonOperator_calendar_dag']) retrieved from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:14:02.090+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:02.090+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:14:02.113+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:02.112+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_calendar_dag to 2024-05-04T00:00:00+00:00, run_after=2024-05-05T00:00:00+00:00
+[2024-05-05T18:14:02.132+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py took 0.102 seconds
+[2024-05-05T18:14:33.120+0000] {processor.py:154} INFO - Started process (PID=146) to work on /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:14:33.121+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py for tasks to queue
+[2024-05-05T18:14:33.121+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:33.121+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:14:33.140+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_BranchPythonOperator_calendar_dag']) retrieved from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:14:33.186+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:33.186+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:14:33.230+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:33.229+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_calendar_dag to 2024-05-04T00:00:00+00:00, run_after=2024-05-05T00:00:00+00:00
+[2024-05-05T18:14:33.261+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py took 0.144 seconds
+[2024-05-05T18:15:03.947+0000] {processor.py:154} INFO - Started process (PID=186) to work on /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:15:03.948+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py for tasks to queue
+[2024-05-05T18:15:03.948+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:03.948+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:15:03.963+0000] {processor.py:766} INFO - DAG(s) dict_keys(['my_BranchPythonOperator_calendar_dag']) retrieved from /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py
+[2024-05-05T18:15:03.996+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:03.995+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:15:04.018+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:04.018+0000] {dag.py:3340} INFO - Setting next_dagrun for my_BranchPythonOperator_calendar_dag to 2024-05-04T00:00:00+00:00, run_after=2024-05-05T00:00:00+00:00
+[2024-05-05T18:15:04.041+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/my_BranchPythonOperator_calendar_dag.py took 0.098 seconds

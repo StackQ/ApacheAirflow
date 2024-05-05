@@ -1,0 +1,42 @@
+[2024-05-05T18:11:30.317+0000] {processor.py:154} INFO - Started process (PID=61) to work on /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:11:30.319+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/sensor_parent_dag.py for tasks to queue
+[2024-05-05T18:11:30.320+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:11:30.320+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:11:30.345+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:11:30.396+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:11:30.395+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:11:30.427+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:11:30.427+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2024-05-05T17:10:00+00:00, run_after=2024-05-05T18:10:00+00:00
+[2024-05-05T18:11:30.454+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/sensor_parent_dag.py took 0.140 seconds
+[2024-05-05T18:12:58.474+0000] {processor.py:154} INFO - Started process (PID=60) to work on /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:12:58.490+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/sensor_parent_dag.py for tasks to queue
+[2024-05-05T18:12:58.491+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:12:58.491+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:12:58.577+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:12:58.658+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:12:58.658+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:12:58.737+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:12:58.737+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2024-05-05T17:10:00+00:00, run_after=2024-05-05T18:10:00+00:00
+[2024-05-05T18:12:58.798+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/sensor_parent_dag.py took 0.328 seconds
+[2024-05-05T18:13:30.308+0000] {processor.py:154} INFO - Started process (PID=38) to work on /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:13:30.309+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/sensor_parent_dag.py for tasks to queue
+[2024-05-05T18:13:30.310+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:13:30.310+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:13:30.351+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:13:30.409+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:13:30.409+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:13:30.456+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:13:30.456+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2024-05-05T17:10:00+00:00, run_after=2024-05-05T18:10:00+00:00
+[2024-05-05T18:13:30.494+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/sensor_parent_dag.py took 0.189 seconds
+[2024-05-05T18:14:01.395+0000] {processor.py:154} INFO - Started process (PID=86) to work on /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:14:01.395+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/sensor_parent_dag.py for tasks to queue
+[2024-05-05T18:14:01.396+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:01.396+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:14:01.409+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:14:01.441+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:01.441+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:14:01.476+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:01.476+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2024-05-05T17:10:00+00:00, run_after=2024-05-05T18:10:00+00:00
+[2024-05-05T18:14:01.503+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/sensor_parent_dag.py took 0.110 seconds
+[2024-05-05T18:14:31.964+0000] {processor.py:154} INFO - Started process (PID=136) to work on /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:14:31.965+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/sensor_parent_dag.py for tasks to queue
+[2024-05-05T18:14:31.966+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:31.966+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:14:31.988+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:14:32.064+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:32.064+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:14:32.102+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:14:32.101+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2024-05-05T17:10:00+00:00, run_after=2024-05-05T18:10:00+00:00
+[2024-05-05T18:14:32.127+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/sensor_parent_dag.py took 0.167 seconds
+[2024-05-05T18:15:02.157+0000] {processor.py:154} INFO - Started process (PID=175) to work on /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:15:02.158+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/sensor_parent_dag.py for tasks to queue
+[2024-05-05T18:15:02.159+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:02.158+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:15:02.173+0000] {processor.py:766} INFO - DAG(s) dict_keys(['sensor_parent_dag']) retrieved from /opt/airflow/dags/sensor_parent_dag.py
+[2024-05-05T18:15:02.212+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:02.211+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:15:02.233+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:02.233+0000] {dag.py:3340} INFO - Setting next_dagrun for sensor_parent_dag to 2024-05-05T17:10:00+00:00, run_after=2024-05-05T18:10:00+00:00
+[2024-05-05T18:15:02.254+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/sensor_parent_dag.py took 0.100 seconds
