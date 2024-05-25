@@ -72,3 +72,17 @@
 [2024-05-05T18:15:03.771+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:03.771+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
 [2024-05-05T18:15:03.772+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:03.772+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
 [2024-05-05T18:15:03.793+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.264 seconds
+[2024-05-05T18:15:34.218+0000] {processor.py:154} INFO - Started process (PID=228) to work on /opt/airflow/dags/parent_of_subdag.py
+[2024-05-05T18:15:34.218+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parent_of_subdag.py for tasks to queue
+[2024-05-05T18:15:34.219+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.219+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parent_of_subdag.py
+[2024-05-05T18:15:34.235+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parent_of_subdag.group_training_tasks_3', 'parent_of_subdag.group_training_tasks', 'parent_of_subdag.group_training_tasks_2', 'parent_of_subdag']) retrieved from /opt/airflow/dags/parent_of_subdag.py
+[2024-05-05T18:15:34.432+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.432+0000] {dag.py:2585} INFO - Sync 4 DAGs
+[2024-05-05T18:15:34.462+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.462+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag to 2024-05-04T00:00:00+00:00, run_after=2024-05-05T00:00:00+00:00
+[2024-05-05T18:15:34.464+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.464+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2024-05-05T18:15:34.465+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.465+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2024-05-05T18:15:34.466+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.466+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2024-05-05T18:15:34.471+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.471+0000] {dag.py:2585} INFO - Sync 3 DAGs
+[2024-05-05T18:15:34.475+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.475+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks to None, run_after=None
+[2024-05-05T18:15:34.476+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.476+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_2 to None, run_after=None
+[2024-05-05T18:15:34.476+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.476+0000] {dag.py:3340} INFO - Setting next_dagrun for parent_of_subdag.group_training_tasks_3 to None, run_after=None
+[2024-05-05T18:15:34.491+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parent_of_subdag.py took 0.276 seconds

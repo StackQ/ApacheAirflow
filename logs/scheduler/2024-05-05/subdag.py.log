@@ -23,3 +23,8 @@
 [2024-05-05T18:15:03.659+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:03.659+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/subdag.py
 [2024-05-05T18:15:03.664+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/subdag.py
 [2024-05-05T18:15:03.674+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/subdag.py took 0.019 seconds
+[2024-05-05T18:15:34.513+0000] {processor.py:154} INFO - Started process (PID=230) to work on /opt/airflow/dags/subdag.py
+[2024-05-05T18:15:34.513+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/subdag.py for tasks to queue
+[2024-05-05T18:15:34.514+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:34.514+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/subdag.py
+[2024-05-05T18:15:34.517+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/subdag.py
+[2024-05-05T18:15:34.529+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/subdag.py took 0.019 seconds

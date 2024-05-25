@@ -1,0 +1,35 @@
+[2024-05-25T16:53:25.188+0000] {processor.py:154} INFO - Started process (PID=35) to work on /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:53:25.189+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/shortcircuit_dag.py for tasks to queue
+[2024-05-25T16:53:25.190+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:25.190+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:53:25.220+0000] {processor.py:766} INFO - DAG(s) dict_keys(['shortcircuit_dag']) retrieved from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:53:25.285+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:25.285+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:53:25.338+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:25.338+0000] {dag.py:3340} INFO - Setting next_dagrun for shortcircuit_dag to 2024-05-25T15:10:00+00:00, run_after=2024-05-25T16:10:00+00:00
+[2024-05-25T16:53:25.401+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/shortcircuit_dag.py took 0.217 seconds
+[2024-05-25T16:53:55.499+0000] {processor.py:154} INFO - Started process (PID=84) to work on /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:53:55.499+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/shortcircuit_dag.py for tasks to queue
+[2024-05-25T16:53:55.500+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:55.500+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:53:55.514+0000] {processor.py:766} INFO - DAG(s) dict_keys(['shortcircuit_dag']) retrieved from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:53:55.546+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:55.546+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:53:55.569+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:55.569+0000] {dag.py:3340} INFO - Setting next_dagrun for shortcircuit_dag to 2024-05-25T15:10:00+00:00, run_after=2024-05-25T16:10:00+00:00
+[2024-05-25T16:53:55.588+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/shortcircuit_dag.py took 0.092 seconds
+[2024-05-25T16:54:26.221+0000] {processor.py:154} INFO - Started process (PID=133) to work on /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:54:26.222+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/shortcircuit_dag.py for tasks to queue
+[2024-05-25T16:54:26.223+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:26.223+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:54:26.246+0000] {processor.py:766} INFO - DAG(s) dict_keys(['shortcircuit_dag']) retrieved from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:54:26.296+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:26.296+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:54:26.331+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:26.331+0000] {dag.py:3340} INFO - Setting next_dagrun for shortcircuit_dag to 2024-05-25T15:10:00+00:00, run_after=2024-05-25T16:10:00+00:00
+[2024-05-25T16:54:26.357+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/shortcircuit_dag.py took 0.139 seconds
+[2024-05-25T16:54:56.898+0000] {processor.py:154} INFO - Started process (PID=172) to work on /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:54:56.899+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/shortcircuit_dag.py for tasks to queue
+[2024-05-25T16:54:56.900+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:56.900+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:54:56.917+0000] {processor.py:766} INFO - DAG(s) dict_keys(['shortcircuit_dag']) retrieved from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:54:56.951+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:56.951+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:54:56.984+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:56.984+0000] {dag.py:3340} INFO - Setting next_dagrun for shortcircuit_dag to 2024-05-25T15:10:00+00:00, run_after=2024-05-25T16:10:00+00:00
+[2024-05-25T16:54:57.010+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/shortcircuit_dag.py took 0.114 seconds
+[2024-05-25T16:55:27.775+0000] {processor.py:154} INFO - Started process (PID=220) to work on /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:55:27.778+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/shortcircuit_dag.py for tasks to queue
+[2024-05-25T16:55:27.778+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:27.778+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:55:27.801+0000] {processor.py:766} INFO - DAG(s) dict_keys(['shortcircuit_dag']) retrieved from /opt/airflow/dags/shortcircuit_dag.py
+[2024-05-25T16:55:27.900+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:27.900+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:55:27.970+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:27.970+0000] {dag.py:3340} INFO - Setting next_dagrun for shortcircuit_dag to 2024-05-25T15:10:00+00:00, run_after=2024-05-25T16:10:00+00:00
+[2024-05-25T16:55:28.021+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/shortcircuit_dag.py took 0.250 seconds

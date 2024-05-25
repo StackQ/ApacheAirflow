@@ -1,0 +1,35 @@
+[2024-05-25T16:53:28.283+0000] {processor.py:154} INFO - Started process (PID=63) to work on /opt/airflow/dags/context.py
+[2024-05-25T16:53:28.284+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/context.py for tasks to queue
+[2024-05-25T16:53:28.285+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:28.285+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/context.py
+[2024-05-25T16:53:28.307+0000] {processor.py:766} INFO - DAG(s) dict_keys(['context']) retrieved from /opt/airflow/dags/context.py
+[2024-05-25T16:53:28.358+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:28.357+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:53:28.395+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:28.395+0000] {dag.py:3340} INFO - Setting next_dagrun for context to 2024-05-24T00:00:00+00:00, run_after=2024-05-25T00:00:00+00:00
+[2024-05-25T16:53:28.432+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/context.py took 0.152 seconds
+[2024-05-25T16:53:58.912+0000] {processor.py:154} INFO - Started process (PID=102) to work on /opt/airflow/dags/context.py
+[2024-05-25T16:53:58.913+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/context.py for tasks to queue
+[2024-05-25T16:53:58.914+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:58.914+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/context.py
+[2024-05-25T16:53:58.929+0000] {processor.py:766} INFO - DAG(s) dict_keys(['context']) retrieved from /opt/airflow/dags/context.py
+[2024-05-25T16:53:58.961+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:58.961+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:53:58.984+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:58.983+0000] {dag.py:3340} INFO - Setting next_dagrun for context to 2024-05-24T00:00:00+00:00, run_after=2024-05-25T00:00:00+00:00
+[2024-05-25T16:53:59.002+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/context.py took 0.092 seconds
+[2024-05-25T16:54:29.602+0000] {processor.py:154} INFO - Started process (PID=151) to work on /opt/airflow/dags/context.py
+[2024-05-25T16:54:29.603+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/context.py for tasks to queue
+[2024-05-25T16:54:29.604+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:29.603+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/context.py
+[2024-05-25T16:54:29.617+0000] {processor.py:766} INFO - DAG(s) dict_keys(['context']) retrieved from /opt/airflow/dags/context.py
+[2024-05-25T16:54:29.651+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:29.651+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:54:29.672+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:29.672+0000] {dag.py:3340} INFO - Setting next_dagrun for context to 2024-05-24T00:00:00+00:00, run_after=2024-05-25T00:00:00+00:00
+[2024-05-25T16:54:29.692+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/context.py took 0.092 seconds
+[2024-05-25T16:55:00.286+0000] {processor.py:154} INFO - Started process (PID=199) to work on /opt/airflow/dags/context.py
+[2024-05-25T16:55:00.286+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/context.py for tasks to queue
+[2024-05-25T16:55:00.287+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:00.287+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/context.py
+[2024-05-25T16:55:00.303+0000] {processor.py:766} INFO - DAG(s) dict_keys(['context']) retrieved from /opt/airflow/dags/context.py
+[2024-05-25T16:55:00.347+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:00.347+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:55:00.376+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:00.376+0000] {dag.py:3340} INFO - Setting next_dagrun for context to 2024-05-24T00:00:00+00:00, run_after=2024-05-25T00:00:00+00:00
+[2024-05-25T16:55:00.397+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/context.py took 0.114 seconds
+[2024-05-25T16:55:31.558+0000] {processor.py:154} INFO - Started process (PID=238) to work on /opt/airflow/dags/context.py
+[2024-05-25T16:55:31.560+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/context.py for tasks to queue
+[2024-05-25T16:55:31.561+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:31.561+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/context.py
+[2024-05-25T16:55:31.615+0000] {processor.py:766} INFO - DAG(s) dict_keys(['context']) retrieved from /opt/airflow/dags/context.py
+[2024-05-25T16:55:31.717+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:31.717+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:55:31.760+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:31.760+0000] {dag.py:3340} INFO - Setting next_dagrun for context to 2024-05-24T00:00:00+00:00, run_after=2024-05-25T00:00:00+00:00
+[2024-05-25T16:55:31.788+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/context.py took 0.239 seconds

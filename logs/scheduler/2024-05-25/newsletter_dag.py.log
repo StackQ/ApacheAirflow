@@ -1,0 +1,35 @@
+[2024-05-25T16:53:24.872+0000] {processor.py:154} INFO - Started process (PID=34) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:53:24.872+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-25T16:53:24.873+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:24.873+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:53:24.935+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:53:25.060+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:25.060+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:53:25.127+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:25.126+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-25T16:53:25.160+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.291 seconds
+[2024-05-25T16:53:55.394+0000] {processor.py:154} INFO - Started process (PID=83) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:53:55.394+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-25T16:53:55.395+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:55.395+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:53:55.408+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:53:55.438+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:55.438+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:53:55.460+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:53:55.460+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-25T16:53:55.485+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.095 seconds
+[2024-05-25T16:54:26.072+0000] {processor.py:154} INFO - Started process (PID=132) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:54:26.073+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-25T16:54:26.074+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:26.073+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:54:26.096+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:54:26.142+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:26.142+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:54:26.182+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:26.181+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-25T16:54:26.211+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.142 seconds
+[2024-05-25T16:54:56.750+0000] {processor.py:154} INFO - Started process (PID=171) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:54:56.751+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-25T16:54:56.752+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:56.751+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:54:56.770+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:54:56.826+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:56.826+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:54:56.859+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:54:56.859+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-25T16:54:56.879+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.132 seconds
+[2024-05-25T16:55:27.430+0000] {processor.py:154} INFO - Started process (PID=219) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:55:27.432+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-25T16:55:27.435+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:27.435+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:55:27.505+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-25T16:55:27.648+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:27.648+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-25T16:55:27.697+0000] {logging_mixin.py:120} INFO - [2024-05-25T16:55:27.697+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-25T16:55:27.737+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.317 seconds

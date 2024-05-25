@@ -40,3 +40,17 @@
 [2024-05-05T18:15:01.069+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:01.069+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2024-05-05T18:15:01.103+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:01.103+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
 [2024-05-05T18:15:01.129+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.129 seconds
+[2024-05-05T18:15:31.568+0000] {processor.py:154} INFO - Started process (PID=221) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-05T18:15:31.569+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-05T18:15:31.570+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:31.570+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-05T18:15:31.615+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-05T18:15:31.758+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:31.758+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:15:31.823+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:15:31.823+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
+[2024-05-05T18:15:31.867+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.303 seconds
+[2024-05-05T18:16:02.373+0000] {processor.py:154} INFO - Started process (PID=267) to work on /opt/airflow/dags/newsletter_dag.py
+[2024-05-05T18:16:02.374+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/newsletter_dag.py for tasks to queue
+[2024-05-05T18:16:02.379+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:16:02.379+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/newsletter_dag.py
+[2024-05-05T18:16:02.414+0000] {processor.py:766} INFO - DAG(s) dict_keys(['newsletter_dag']) retrieved from /opt/airflow/dags/newsletter_dag.py
+[2024-05-05T18:16:02.487+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:16:02.486+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-05T18:16:02.522+0000] {logging_mixin.py:120} INFO - [2024-05-05T18:16:02.522+0000] {dag.py:3340} INFO - Setting next_dagrun for newsletter_dag to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
+[2024-05-05T18:16:02.556+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/newsletter_dag.py took 0.186 seconds
